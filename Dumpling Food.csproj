@@ -7,6 +7,13 @@
 
   <ItemGroup>
     <Folder Include="Views\Login\" />
+    <Folder Include="wwwroot\lib\Assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\Assets\logo-name.svg" />
+    <None Include="wwwroot\lib\Assets\logo.svg" />
+    <None Include="wwwroot\lib\Assets\name.svg" />
   </ItemGroup>
 
 </Project>
