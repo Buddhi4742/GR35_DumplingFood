@@ -20,9 +20,11 @@ a.navbar-brand {
   display:flex;
   word-break: break-all;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     margin-top: 12px;
-    color:white;
+    font-size:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
@@ -58,7 +60,6 @@ a.navbar-brand {
     height: 100vh;
     min-height: 300px;
     background: no-repeat center center scroll;
-    -webkit-background-size: cover;
     background-size: cover;
     object-fit: cover;
 }
