@@ -23,7 +23,7 @@ namespace Dumpling_Food.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Recommended()
         {
             return View();
         }
