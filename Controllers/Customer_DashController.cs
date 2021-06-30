@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 
 namespace Dumpling_Food.Controllers
 {
-    public class HomeController : Controller
+        
+    public class Customer_DashController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<Customer_DashController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public Customer_DashController(ILogger<Customer_DashController> logger)
         {
             _logger = logger;
         }
@@ -23,7 +24,7 @@ namespace Dumpling_Food.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Recommended()
         {
             return View();
         }
