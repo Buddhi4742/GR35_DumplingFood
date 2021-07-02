@@ -14,6 +14,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -73,14 +75,14 @@
                 <a href="#">Learn more</a>
             </div>
             <div class="image col-lg-6 col-md-6 col-12 w-50 ">
-                <img class="image-fluid" src="~/lib/Assets/images/about-section1.jpg" />
+                <img class="image-fluid pic" src="~/lib/Assets/images/about-section1.jpg" />
             </div>
 
         </div>
         <div class="row align-items-center container my-5 mx-auto">
 
             <div class="image col-lg-6 col-md-6 col-12 w-50 ">
-                <img class="image-fluid" src="~/lib/Assets/images/about-section2.jpg" />
+                <img class="image-fluid pic" src="~/lib/Assets/images/about-section2.jpg" />
             </div>
             <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 ">
                 <h6>Dumpling Food Restaurant</h6>
@@ -104,18 +106,73 @@
     <div class="food-menu">
 
     </div>
-    <div class="chefs">
+    <section id="chefs" class="chefs">
+        <div class="container">
 
-    </div>
-    <div class="location-map">
+            <div class="section-title">
+                <h2>Our Proffesional <span>Chefs</span></h2>
+                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </div>
 
-    </div>
-    <div class="contact-newsletter">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="~/lib/Assets/images/chef1.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Master Chef</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="~/lib/Assets/images/chef2.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="member-info">
+                            <h4>Sarah Jhonson</h4>
+                            <span>Patissier</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="~/lib/Assets/images/chef3.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+                            <span>Cook</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="contact" class="contact-newsletter">
         <div class="map">
             <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7696.094287919249!2d79.85716182154012!3d6.914081899618856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594226a0ffbb%3A0xa413c5b33bf575f6!2sKollupitiya%2C%20Colombo!5e0!3m2!1sen!2slk!4v1625152415458!5m2!1sen!2slk"
                     frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
