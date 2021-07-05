@@ -19,7 +19,7 @@ namespace Dumpling_Food.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Chome()
         {
             return View();
         }
