@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Manager\" />
+    <Folder Include="Models\Manager\" />
     <Folder Include="Views\Login\" />
+    <Folder Include="Views\Manager\" />
   </ItemGroup>
 
 </Project>
