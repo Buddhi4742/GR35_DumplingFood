@@ -28,7 +28,7 @@ a {
 
 .dropdown {
     
-    overflow: hidden;
+    overflow:visible;
 }
 
     /* Dropdown button */
@@ -79,170 +79,102 @@ a {
 }
 
 
-:root {
-    --header-height: 3rem;
-    /*========== Colors ==========*/
-    --first-color: #069C54;
-    --first-color-alt: #048654;
-    --title-color: #393939;
-    --text-color: #707070;
-    --text-color-light: #A6A6A6;
-    --body-color: #FBFEFD;
-    --container-color: #FFFFFF;
-    /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
-    --biggest-font-size: 2.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    /*========== Margenes ==========*/
-    --mb-1: .5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
-    --mb-6: 3rem;
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
+.cusabout {
+    background: url(/lib/Images/cushome.png) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 50px 0;
 }
 
-@media screen and (min-width: 768px) {
-    :root {
-        --biggest-font-size: 4rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+.inner-section {
+    width: 55%;
+    float: right;
+    background-color: #eda291;
+    padding: 140px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+
+    .inner-section h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
     }
+
+.custext {
+    font-size: 18px;
+    color: #423e3e;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-   
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-h1, h2, h3, p, ul {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/*========== CLASS CSS ==========*/
-.section {
-    padding: 4rem 0 2rem;
-}
-
-.section-title, .section-subtitle {
+.skills button {
+    font-size: 22px;
     text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color:red;
+    color: white;
+    cursor: pointer;
 }
 
-.section-title {
-    font-size: var(--h1-font-size);
-    color: var(--title-color);
-    margin-bottom: var(--mb-3);
-}
-
-.section-subtitle {
-    display: block;
-    color: var(--first-color);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1);
-}
-.bd-container {
-    max-width: 960px;
-    width: calc(100% - 2rem);
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
-}
-
-.bd-grid {
-    display: grid;
-    gap: 1.5rem;
-}
-
-
-
-
-
-
-
-/*Home */
-.cushome__container {
-    height: calc(100vh - var(--header-height));
-    align-content: center;
-}
-
-.cushome__title {
-    font-size: var(--biggest-font-size);
-    color: var(--first-color);
-    margin-bottom: var(--mb-1);
-}
-
-.cushome__subtitle {
-    font-size: var(--h1-font-size);
-    color: var(--title-color);
-    margin-bottom: var(--mb-4);
-}
-
-.cushome__img {
-    width: 400px;
-    justify-self: right;
-    left:400px;
-    right:50px;
-}
-
-/*========== BUTTONS ==========*/
-.cusbutton {
-    display: inline-block;
-    background-color: var(--first-color);
-    color: #FFF;
-    padding: .75rem 1rem;
-    border-radius: .5rem;
-    transition: .3s;
-}
-
-    .cusbutton:hover {
-        background-color: var(--first-color-alt);
+    .skills button:hover {
+        transition: 1s;
+        background-color: #ecf5f5;
+        color: red;
     }
+
+@media screen and (max-width:1200px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .cusabout {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cusabout {
+        padding: 0;
+    }
+
+    .inner-section {
+        padding: 60px;
+    }
+
+    .skills button {
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+
+
+
+/*favourites*/
+
+
+
+
+
+
+
+
+
+
 
 
 
