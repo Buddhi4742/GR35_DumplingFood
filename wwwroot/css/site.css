@@ -235,7 +235,7 @@ body {
 }
 
 .mdtccards__item {
-    height: 400px;
+    height: 450px;
 }
 
 .mdtccard {
@@ -376,3 +376,46 @@ body {
 
 
 
+
+
+.mdtable body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #F1F1F1;
+}
+
+.mdtable table {
+    background: #FFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    box-shadow: $box-shadow-mid;
+}
+
+
+
+
+
+
+
+.mdtable tr {
+    border-bottom: 1px solid rgba(140, 140, 140, 0.17);
+
+}
+
+
+
+
+
+.mdtable th {
+    line-height: 12px;
+    font-weight: bold;
+}
+
+.mdtable th, td {
+    text-align: left;
+    padding: 1em;
+    max-height: 12px;
+    height: 12px;
+    line-height: 22px;
+}
+  
