@@ -22,11 +22,34 @@ namespace Dumpling_Food.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult ManagerMenu()
         {
             return View();
         }
+        public IActionResult ManagerFood()
+        {
+            return View();
+        }
+
+        public IActionResult ManagerCustomers()
+        {
+            return View();
+        }
+        public IActionResult ManagerReviews()
+        {
+            return View();
+        }
+
+        public IActionResult ManagerReports()
+        {
+            return View();
+        }
+
+        public IActionResult ManagerInventory()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
