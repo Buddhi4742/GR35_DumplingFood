@@ -3,7 +3,7 @@
 		title: "Do you want to delete this customer?",
 		type: "warning",
 		showCancelButton: true,
-		confirmButtonColor: "#DD6B55",
+		confirmButtonColor: "red",
 		confirmButtonText: "Yes",
 		closeOnConfirm: false
 	},
@@ -11,6 +11,8 @@
 			swal("Deleted!", "", "success");
 		});
 };
+
+
 
 var Menu = (function () {
 
