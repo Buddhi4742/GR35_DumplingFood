@@ -9,9 +9,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -22,16 +23,74 @@
         <div class="inner-section">
             <h1>Hello! Helen 🤩</h1>
             <p class="custext">
-Welcome to the Dumpling Food restaurant customer Dashboard!
-         <br />       You have ordered 6 times! 
+                Welcome to the Dumpling Food restaurant customer Dashboard!
+                <br />       You have ordered 6 times!
             </p>
             <div class="skills">
-                <button>Order Here</button>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+    <h1>Favourites </h1>
+    <div class="fgrid">
+
+        <div class="fgrid-item">
+            <div class="fcard">
+                <img class="fcard-img" src="~/lib/Images/2.jpg" alt="Banh Bot Loc" />
+                <div class="fcard-content">
+                    <h1 class="fcard-header">Banh Bot Loc</h1>
+                    <p class="fcard-text">
+                        This almost transparent Vietnamese pork and shrimp dumplings are made with tapioca flour and filled with pork belly and shrimp.
+                        It gives the banh lot loc its unique clear appearance and chewy texture. They can either be wrapped in banana leaves and steamed, or boiled, and are served with a fish based dipping sauce.
+                        <ul>
+                            <li>RS190.00</li>
+                            <li>⭐⭐⭐⭐⭐ </li>
+                        </ul>
+
+                    </p>
+                    <button class="fcard-btn">Add to cart <span>&rarr;</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="fgrid-item">
+            <div class="fcard">
+                <img class="fcard-img"
+                     src="~/lib/Images/3.jpg"
+                     alt="Gyoza" />
+                <div class="fcard-content">
+                    <h1 class="fcard-header">Gyoza</h1>
+                    <p class="fcard-text">
+                        These Japanese dumplings are related to Chinese pot stickers (guo tie), though they tend to be made with thinner wrappers, and filled with minced pork, cabbage, scallions, garlic, and ginger.
+                        <br />   They are then served with rice vinegar, soy sauce and chili oil based dipping sauce.
+                        <ul>
+                            <li>RS190.00</li>
+                            <li>⭐⭐⭐⭐⭐ </li>
+                        </ul>
+                    </p>
+                    <button class="fcard-btn">Add to cart<span>&rarr;</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="fgrid-item">
+            <div class="fcard">
+                <img class="fcard-img" src="~/lib/Images/4.jpg" alt="Mandu" />
+                <div class="fcard-content">
+                    <h1 class="fcard-header">Mandu</h1>
+                    <p class="fcard-text">
+                        Mandu is the Korean take on dumplings. But, they are more similar to the Central Asian manti than they are to Chinese or Japanese dumplings. Korean mandu consist of a mixture of ingredients. It is usually filled with ground pork, kimchi, vegetables, and noodles. It is served with a dipping sauce made of soy and vinegar.
+                        <ul>
+                            <li>RS190.00</li>
+                            <li>⭐⭐⭐⭐⭐ </li>
+                        </ul>
+                    </p>
+                    <button class="fcard-btn">Add to cart<span>&rarr;</span></button>
+                </div>
             </div>
         </div>
     </div>
 
-    
+
+
 
 
 

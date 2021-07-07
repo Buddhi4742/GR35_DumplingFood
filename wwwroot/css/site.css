@@ -1,6 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -161,18 +161,164 @@ a {
     }
 }
 
+/*home2*/
+
+.fgrid {
+  display: grid;
+  width: 88rem;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.fgrid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  width:33rem;
+}
+
+.fgrid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.fcard-img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.fcard-content {
+  padding: 1rem;
+}
+
+.fcard-header {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+
+.fcard-text {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.2;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.fcard-btn {
+    display: block;
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e38d8d;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.fcard-btn span {
+  margin-left: 0.2rem;
+  transition: 0.2s;
+}
+
+.fcard-btn:hover,
+.fcard-btn:active {
+  background-color: #c2cffc;
+}
+
+.fcard-btn:hover span,
+.fcard-btn:active span {
+  margin-left: 1.1rem;
+}
+
+@media only screen and (max-width: 40em) {
+  body {
+    padding: 3rem;
+  }
+
+  .gfrid {
+    grid-gap: 3rem;
+  }
+}
+
+
+/*Recommended*/
+
+
+.rcolumn {
+    width: 25%;
+    float: left;
+    padding: 100px 10px;
+}
+
+.rrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
-/*favourites*/
+@media screen and (max-width:600px) {
+    .rcolumn {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
 
+.rcard {
+    box-shadow: 0 4px 10px 0 rgba(255, 0, 0, 0.8);
+    
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    padding-bottom: 15px;
+}
 
+.rtitle {
+    color: gray;
+    font-size: 18px;
+}
 
+button {
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    color: white;
+    background-color: #e32d2d;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    align-items:center;
+}
+li {
+    text-decoration: none;
+    font-size: 22px;
+    color: red;
+}
 
-
-
-
-
+     button:hover {
+        opacity: 0.6;
+    }
 
 
 
@@ -194,9 +340,10 @@ a {
 
     /* Sticky footer styles
 -------------------------------------------------- */
-    html {
-        font-size: 14px;
-    }
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+}
 @media (min-width: 768px) {
   html {
     font-size: 16px;
