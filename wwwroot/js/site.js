@@ -1,4 +1,18 @@
-﻿var Menu = (function () {
+﻿function mydelete() {
+	swal({
+		title: "Do you want to delete this customer?",
+		type: "warning",
+		showCancelButton: true,
+		confirmButtonColor: "#DD6B55",
+		confirmButtonText: "Yes",
+		closeOnConfirm: false
+	},
+		function () {
+			swal("Deleted!", "", "success");
+		});
+};
+
+var Menu = (function () {
 
 	var $container = $('#rm-container'),
 		$cover = $container.find('div.rm-cover'),
