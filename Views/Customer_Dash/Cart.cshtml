@@ -1,4 +1,133 @@
 ﻿@{
     ViewData["Title"] = "Cart Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="ctcontainer">
+
+        <h3>Shopping Cart</h3>
+
+        <div class="ctcart">
+
+            <div class="ctproducts">
+
+                <div class="ctproduct">
+
+                    <img src="~/lib/Images/buuz.jpg">
+
+                    <div class="ctproduct-info">
+
+                        <h3 class="ctproduct-name">Buuz</h3>
+
+                        <h4 class="ctproduct-price">Rs120.000</h4>
+
+                  
+
+                        <p class="ctproduct-quantity">Qnt: <input value="1" name="">
+
+                        <p class="ctproduct-remove">
+
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+
+                            <span class="ctremove">Remove</span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="ctproduct">
+
+                    <img src="~/lib/Images/coxinha.jpg">
+
+                    <div class="ctproduct-info">
+
+                        <h3 class="ctproduct-name">Coxinha</h3>
+
+                        <h4 class="ctproduct-price">Rs 190.00</h4>
+
+                        
+
+                        <p class="ctproduct-quantity">Qnt: <input value="1" name="">
+
+                        <p class="ctproduct-remove">
+
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+
+                            <span class="ctremove">Remove</span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ctcart-total">
+
+                <p>
+
+                    <span>Total Price</span>
+
+                    <span>Rs 310.00</span>
+
+                </p>
+
+                <p>
+
+                    <span>Number of Items</span>
+
+                    <span>2</span>
+
+                </p>
+
+                <p>
+
+                    <span>Order fee</span>
+
+                    <span>Rs 20.00</span>
+
+                </p>
+                <p>
+
+                    <span>Total Payment</span>
+
+                    <span>Rs 330.00</span>
+
+                </p>
+
+                <a href="#">Proceed to Checkout</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
 
