@@ -328,6 +328,10 @@ button.accept-policy {
 }
 .about .pic {
     border-radius:20px;
+    padding-top:2rem;
+}
+.about .section-title{
+    text-align:center;
 }
 .about .text {
     display: flex;
@@ -342,7 +346,68 @@ button.accept-policy {
      font-size: 1rem;
      letter-spacing: 2px;
 }
+@media (max-width: 512px) {
+    .about .pic {
+        width: 100%;
+        height: auto;
+        
+    }
+    .about .text {
+        padding: unset;
+    }
+}
 
+
+.menu .pic {
+    border-radius: 20px;
+    padding: 2rem 0;
+}
+.menu .section-title{
+    text-align:center;
+}
+.menu .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4rem;
+}
+.menu .text h6 {
+     font-weight: 800;
+     font-size: 1rem;
+     letter-spacing: 2px;
+}
+.menu {
+    background: url(../lib/Assets/images/menu-bg.jpg) center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0;
+    position: relative;
+    
+}
+@media (max-width: 512px) {
+    .menu .pic {
+        padding-top: 4rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu .text {
+        padding: unset;
+        color: black;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .menu {
+        background-attachment: fixed;
+        display:flex;
+        justify-content:center;
+    }
+}
+ 
 
 /* Sticky footer styles
 -------------------------------------------------- */
