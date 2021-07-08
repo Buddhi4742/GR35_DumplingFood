@@ -268,14 +268,7 @@ a {
     --text-color: #d7bdca;
 }
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-pink);
-}
 
 .favcards {
     display: grid;
@@ -284,6 +277,7 @@ body {
     margin: 4rem 5vw;
     padding: 0;
     list-style: none;
+    
 }
 
 .favcard {
@@ -293,11 +287,14 @@ body {
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
 }
 
 .favcard__image {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 .favcard__overlay {
@@ -373,20 +370,84 @@ body {
 
 .favcard__status {
     font-size: 0.8em;
-    color: var(--text-color);
+    color: #C01818;
 }
 
 .favcard__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: var(--text-color);
+    color: #A18F8B;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
-        
-      
+.ffbutton {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.ffbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+    .ffbutton span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+.ffbutton:hover span {
+    padding-right: 15px;
+}
+
+    .ffbutton:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+
+
+/*Past ordered*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Recommended*/
 
