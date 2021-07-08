@@ -1581,7 +1581,7 @@ a.rm-viewdetails:before {
 .mrpage .table p {
     
     text-align: justify;
-   margin-right:100px;
+   margin-right:20px;
    margin-left:0px;
     width:300px;
 }
@@ -1732,7 +1732,7 @@ a.rm-viewdetails:before {
         padding-left: 0;
         padding-right: 0;
         max-width: 1200px;
-        margin-right: 1px;
+        margin-right: 0px;
         margin-left: 0px;
     }
 
@@ -1741,6 +1741,46 @@ a.rm-viewdetails:before {
         margin-bottom: 4rem;
     }
 
+
+
+
+.revupbutton{
+    width:80px;
+    height:50px;
+    font-weight:600;
+    background-color:dodgerblue;
+    border-radius:10px;
+    color:white;
+    font-size:20px;
+    border:none;
+    margin-left:10px;
+
+}
+
+    .revupbutton:hover {
+        border: none;
+        background-color: blue;
+        font-weight: 600;
+        color: black;
+    }
+
+.revdelbutton {
+    width: 80px;
+    height: 50px;
+    background-color: #f14040;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+.revdelbutton:hover {
+    border: none;
+    background-color: red;
+    color: black;
+}
 
 
 

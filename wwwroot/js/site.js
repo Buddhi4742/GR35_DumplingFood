@@ -12,6 +12,43 @@
 		});
 };
 
+function revup() {
+	swal({
+		title: "Do you want to publish this review?",
+		type: "warning",
+
+		showCancelButton: true,
+		confirmButtonColor: "blue",
+		confirmButtonText: "Yes",
+		closeOnConfirm: false,
+		className: "red-bg",
+	},
+		function () {
+			swal("Published!", "", "success");
+		});
+	
+};
+
+function revdel() {
+	swal({
+		title: "Do you want to delete this review?",
+		type: "warning",
+		showCancelButton: true,
+		confirmButtonColor: "red",
+		confirmButtonText: "Yes",
+		closeOnConfirm: false
+	},
+		function () {
+			swal("Deleted!", "", "success");
+		});
+};
+
+
+
+
+
+
+
 
 
 var Menu = (function () {
