@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Recent orders Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,6 +14,7 @@
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/site.js"> </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -22,81 +23,147 @@
 
 <body>
 
-<hr>
-    <!-->
-<table>
-    <tr id="header">
-        <th>Date & Time</th>
-        <th>Items</th>
-        <th>Paid</th>
-        <th> </th>
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td> <button class="rebtn"> ReOrder </button> </td>
+
+    <div class="menucontainer">
+        <div class="menucard">
+            <div class="face face1">
+                <div class="menucontent">
+                    <h3> 20.05.2021 08:00</h3>
+                    <ul>
+                        <li> Noodle soup<span> 1</span></li>
+                        <li> Fried Egg<span> 2 </span></li>
 
 
-    </tr>
 
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td> <button class="rebtn"> ReOrder </button></td>
+                    </ul>
+                    <a href="#"> Rs250.00</a> <br>
+                    <button class="modal-toggle" id="modal-toggle">View Receipt  </button>
 
+                </div>
+            </div>
+            <div class="face face2">
 
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td><button class="rebtn"> ReOrder </button> </td>
+                <div class="menuimg"> <h2> 1 </h2></div>
 
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td><button class="rebtn"> ReOrder </button> </td>
+            </div>
 
 
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td> <button class="rebtn"> ReOrder </button></td>
+
+            <div class="popup center">
+                <div class="icon">
+Thank you
+                 
+                </div>
+                <div class="title">
+                    20.05.2021 08:00
+                </div>
+                <div class="description">
+                    <ul>
+                        <li> Noodle soup<span> 1</span></li>
+                        <li> Fried Egg<span> 2 </span></li>
+                        <li> Total <span> Rs 250.00</span></li>
 
 
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td><button class="rebtn"> ReOrder </button> </td>
+                    </ul>
+                </div>
+                <div class="dismiss-btn">
+                    <button id="dismiss-popup-btn">
+                        Dismiss
+                    </button>
+                </div>
+            </div>
 
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td><button class="rebtn"> ReOrder </button> </td>
+            <script>
+                document.getElementById("modal-toggle").addEventListener("click", function () {
+                    document.getElementsByClassName("popup")[0].classList.add("active");
+                });
 
+                document.getElementById("dismiss-popup-btn").addEventListener("click", function () {
+                    document.getElementsByClassName("popup")[0].classList.remove("active");
+                });
+            </script>
 
-    </tr>
-    <tr>
-        <td>20.06.2021 08:00am </td>
-        <td>beef-noodle-soup 02 </td>
-        <td>Rs 260.00 </td>
-        <td> <button class="rebtn"> ReOrder </button></td>
-
-
-    </tr>
-</table>
+        </div>
 
 
-        -->
+
+
+
+
+
+
+
+
+
+        <div class="menucard">
+            <div class="face face1">
+                <div class="menucontent">
+                    <h3>18.05.2020 17:02</h3>
+                    <ul>
+                        <li> Streamed jasmine rice<span> 2 </span></li>
+                        <li>Fried egg<span> 4 </span></li>
+                        <li> Noodle soup<span> 1 </span></li>
+
+
+                    </ul>
+                    <a href="#"> Rs120.00</a> <br>
+                    <button class="modal-toggle" id="modal-toggle">View Receipt  </button>
+
+
+                </div>
+            </div>
+            <div class="face face2">
+
+                <div class="menuimg"> <h2> 2 </h2></div>
+            </div>
+        </div>
+
+
+
+        <div class="menucard">
+            <div class="face face1">
+                <div class="menucontent">
+                    <h3>18.05.2020 17:00</h3>
+                    <ul>
+                        <li> Noodle soup<span> 1</span></li>
+                        <li> vegetable & Noodle soup<span> 2 </span></li>
+                        <li> Spicy brine pork ear<span> 1 </span></li>
+
+
+                    </ul>
+                    <a href="#"> Rs120.00</a> <br>
+                    <button class="modal-toggle" id="modal-toggle">View Receipt  </button>
+
+
+                </div>
+            </div>
+            <div class="face face2">
+
+                <div class="menuimg"> <h2> 3 </h2></div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
