@@ -1143,10 +1143,11 @@ a.rm-viewdetails:before {
     }
 
 
-.customerbody table {
-    min-width: 875px;
-    border-collapse: collapse;
-}
+    .customerbody table {
+        min-width: 875px;
+        border-collapse: collapse;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
 
 .customerbody thead {
     font-size: .8rem;
@@ -1545,6 +1546,202 @@ a.rm-viewdetails:before {
     margin-left:430px;
     margin-top:10px;
 }
+
+
+
+
+
+
+.mrpage .table {
+    width: 100%;
+    padding: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: var(--tableBgColor, #fff);
+
+}
+.mrpage .table td, th {
+    vertical-align: middle;
+}
+.mrpage .table ul {
+        list-style:none;
+        font-size:20px;
+        padding-top:20px;
+}
+    .mrpage .table li {
+        padding-bottom: 10px;
+        
+    }
+    .mrpage .table .rate {
+        font-size: 40px;
+        font-weight:600;
+    }
+
+.mrpage .table p {
+    
+    text-align: justify;
+   margin-right:100px;
+   margin-left:0px;
+    width:300px;
+}
+.mrpage .cnum {
+    color: red;
+    padding-right: 10px;
+    
+}
+.mrpage .cname {
+    font-weight: 700;
+    padding-right: 0px;
+    margin-right:0px;
+}
+
+.mrpage .table img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 100px;
+}
+.mrpage .table td{
+    width: 100%;
+    height:200px;
+    }
+    .mrpage .table__thead {
+    background-color: var(--tableTitleBgColor);
+    color: var(--tableTitleTextColor);
+}
+
+.mrpage .table__mobile-caption {
+    display: none;
+}
+
+.mrpage .table__td, .table__th {
+    padding: var(--tableCellPadding, 20px);
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 769px) {
+
+    .mrpage .table__tr:hover {
+        background-color: var(--tableRowBgColorHover);
+    }
+
+    .mrpage .table__td:first-child, .table__th:first-child {
+        width: 30%;
+        text-align: left;
+    }
+
+    .mrpage .table__td, .table__th {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .mrpage .table, .table__thead, .table__tbody, .table__tr {
+        display: block;
+    }
+
+    .mrpage .table__td {
+        display: flex;
+    }
+
+    .mrpage .table__head {
+        display: none;
+    }
+
+    .mrpage .table__mobile-title {
+        background-color: var(--tableTitleBgColor);
+        color: var(--tableTitleTextColor);
+    }
+
+    .mrpage .table__td {
+        border-bottom: 1px solid var(--tableSeparatorColor);
+    }
+
+        .mrpage .table__td:last-of-type {
+            border-bottom: none;
+        }
+
+    .mrpage .table__mobile-caption, .table__value {
+        display: block;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .mrpage .table__mobile-caption {
+        padding-right: 2%;
+    }
+}
+
+
+
+.mrpage .table {
+    --tableCellPadding: 2rem;
+    --tableTitleBgColor: #5668ca;
+    --tableTitleTextColor: #fff;
+    --tableRowBgColorHover: #f0f0f0;
+    --tableSeparatorColor: #eee;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .mrpage html {
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .mrpage html {
+        font-size: 50%;
+    }
+}
+
+.mrpage body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Open Sans", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.4rem;
+    background-color: #f0f0f0;
+    color: #222;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mrpage a {
+    text-decoration: none;
+    color: #5668ca;
+}
+
+    .mrpage a:hover, .mrpage a:focus {
+        text-decoration: underline;
+    }
+
+.mrpage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+    .mrpage .page__demo {
+        flex-grow: 1;
+    }
+
+    .mrpage .main-container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1200px;
+        margin-right: 1px;
+        margin-left: 0px;
+    }
+
+    .mrpage .page__container {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+
 
 
 
