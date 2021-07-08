@@ -23,7 +23,11 @@ namespace Dumpling_Food.Controllers
         {
             return View();
         }
-
+        public IActionResult RecentOrders()
+        {
+            return View();
+        }
+      
         public IActionResult Recommended()
         {
             return View();
