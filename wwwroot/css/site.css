@@ -8,9 +8,7 @@ body {
     /*background-color: #f8002f;
     background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);*/
 }
-section{
-    padding:50px 0;
-}
+
 section #about {
  
 }
@@ -407,23 +405,171 @@ button.accept-policy {
         justify-content:center;
     }
 }
- 
+
+
+
+.section .map {
+    padding:unset;
+}
+
+
+
+.contact .section-title{
+    text-align:center;
+    
+}
+.contact .section-title h2{
+    font-family:'Reggae One'
+}
+
+.contact .info-wrap {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contact .info {
+    background: #fff;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #ffb03b;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fff6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #433f39;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #7a7368;
+}
+
+.contact .info:hover i {
+    background: #ffb03b;
+    color: #fff;
+}
+
+.contact .send-massage-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+}
+
+.contact .send-massage-form .form-group {
+    padding-bottom: 8px;
+}
+
+
+
+.contact .send-massage-form input,
+.contact .send-massage-form textarea {
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .send-massage-form input {
+    height: 44px;
+    border-radius:20px;
+}
+
+.contact .send-massage-form textarea {
+    padding: 10px 12px;
+    border-radius:20px;
+}
+
+.contact .send-massage-form button[type="submit"] {
+    background: #ffb03b;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact .send-massage-form button[type="submit"]:hover {
+    background: #ffa012;
+}
+
+
+
+
+
+
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+#footer {
+    background: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+#footer p {
+    font-size: 15px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #46423b;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background: red;
+}
+
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+
+#footer .credits {
+    font-size: 13px;
 }
