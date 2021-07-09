@@ -4,74 +4,84 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
-    <link rel="stylesheet" href="ss">
-    <script src="~/js/site.js" defer></script>
-    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Flip Book sin Librerias</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/site.css">
 
 </head>
 <body>
-    <!-- Previous Button -->
-    <button id="prev-btn">
-        <i class="fas fa-arrow-circle-left"></i>
-    </button>
+
+    <div class="tab-section">
+        <ul>
+            <li><a id="tab1" href="?upcoming" class="active">Dumplings </a></li>
+            <li><a id="tab2" href="#"> Soups </a></li>
+            <li><a id="tab3" href="#"> Noodles & Rice</a></li>
+            <li><a id="tab4" href="#"> Spicy Brine </a></li>
+            <li><a id="tab5" href="#"> Appetizer</a></li>
+            <li><a id="tab6" href="#"> Street food </a></li>
+            <li><a id="tab7" href="#"> Promotion package</a></li>
 
 
-    <!-- Book -->
-    <div id="book" class="book" style="align-items:center">
-        <!-- Paper 1 -->
-        <div id="p1" class="paper">
-            <div class="front">
-                <div id="f1" class="front-content">
-                    <img src="~/lib/Images/logo.png" width="120px" height="80px" />
-                    <h1 style="color:firebrick">Dumpling Food Restaurant  Menu </h1>
+        </ul>
 
+
+  <hr>
+</div>
+
+
+
+    <div class="cmcontainer" id="tab1C">
+        <div class="book-content">
+            <div class="book">
+                <div class="face-front" id="portada"></div>
+                <div class="face-back" id="trsf">
+                    <h1>Beef & celeray </h1>
+                    <img src="~/lib/Images/beef& celery.jpg" width="120" height="120" />
+                    <h4> RS.700.00</h4>
+                    <p> Undervalued vegetable and often an afterthought thrown into salads or soup stock, or served as crudits, or enjoyed with a Bloody Mary </p>
                 </div>
             </div>
-            <div class="back">
-                <div id="b1" class="back-content">
-                    <h1>Back 1</h1>
+
+            <div class="book">
+                <div class="face-front">
+                    <h1>Title 2</h1>
+                    <img src="~/lib/Images/banh-bot.jpg" width="100" height="100">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, vero quod ducimus placeat voluptate quidem error sequi, earum eos minima in!</p>
+                </div>
+                <div class="face-back">
+                    <h1>Title 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laborum voluptatibus eaque repudiandae ullam necessitatibus, dolor ad expedita, eum praesentium vitae! Voluptate in itaque modi consequatur. Aliquid odit quisquam quibusdam!</p>
                 </div>
             </div>
-        </div>
-        <!-- Paper 2 -->
-        <div id="p2" class="paper">
-            <div class="front">
-                <div id="f2" class="front-content">
-                    <h1>Front 2</h1>
+
+            <div class="book">
+                <div class="face-front">
+                    <h1>Title 4</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, vero quod ducimus placeat voluptate quidem error sequi, earum eos minima in!</p>
+                </div>
+                <div class="face-back">
+                    <h1>Title 5</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laborum voluptatibus eaque repudiandae ullam necessitatibus, dolor ad expedita, eum praesentium vitae! Voluptate in itaque modi consequatur. Aliquid odit quisquam quibusdam!</p>
                 </div>
             </div>
-            <div class="back">
-                <div id="b2" class="back-content">
-                    <h1>Back 2</h1>
+
+            <div class="book">
+                <div class="face-front">
+                    <h1>Title 6</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, vero quod ducimus placeat voluptate quidem error sequi, earum eos minima in!</p>
                 </div>
-            </div>
-        </div>
-        <!-- Paper 3 -->
-        <div id="p3" class="paper">
-            <div class="front">
-                <div id="f3" class="front-content">
-                    <h1>Front 3</h1>
-                </div>
-            </div>
-            <div class="back">
-                <div id="b3" class="back-content">
-                    <h1>Back 3</h1>
+                <div class="face-back" id="portada-back">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Next Button -->
-    <button id="next-btn">
-        <i class="fas fa-arrow-circle-right"></i>
-    </button>
+    <script src="~/js/site.js"></script>
 </body>
 </html>
