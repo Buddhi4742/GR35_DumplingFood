@@ -1914,7 +1914,7 @@ a.rm-viewdetails:before {
 
     .mfwrapper .back {
         transform: rotateY(180deg);
-        background-color: #fff;
+        background-color: #eed5d5;
         border: 2px solid rgb(240, 240, 240);
     }
         .mfwrapper .back .inner
@@ -1938,7 +1938,7 @@ a.rm-viewdetails:before {
 {
     content: '';
     position: absolute;
-    left: -0.9em;
+    left: 1em;
     height: 18px;
     width: 1px;
     background-color: #ccc;
@@ -1977,20 +1977,19 @@ a.rm-viewdetails:before {
 
 
 
-.mfwrapper .back .description {
-    grid-row: 5;
-    grid-column: 5/-5;
-    font-size: 0.86em;
-    border-radius: 5px;
-    font-weight: 600;
-    line-height: 1.4em;
+        .mfwrapper .back .description {
+            grid-row: 5;
+            grid-template-columns: repeat( auto-fit);
+            font-size: 0.86em;
+            border-radius: 5px;
+            font-weight: 600;
+            line-height: 1.4em;
+            overflow: hidden;
+            color: $accent-color;
+            padding-right: 1px;
+        }
 
-    overflow: auto;
-    color: $accent-color;
-    padding-right: 10px;
-}
 
-.mfwrapper .back .location,
 .mfwrapper .back .price {
     font-weight: 600;
     color: $accent-color;
@@ -1998,10 +1997,7 @@ a.rm-viewdetails:before {
     font-size: 0.86em;
 }
 
-.mfwrapper .back .location {
-    grid-column: 1/3;
-    justify-self: left;
-}
+
 
 .mfwrapper .back .price {
     grid-column: 3/-1;
