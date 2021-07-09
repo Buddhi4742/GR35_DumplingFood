@@ -1,155 +1,77 @@
-﻿<!DOCTYPE html>
-<html>
+﻿
+@{
+    ViewData["Title"] = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="s.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="ss">
+    <script src="~/js/site.js" defer></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <!-- Previous Button -->
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
 
 
+    <!-- Book -->
+    <div id="book" class="book" style="align-items:center">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                    <img src="~/lib/Images/logo.png" width="120px" height="80px" />
+                    <h1 style="color:firebrick">Dumpling Food Restaurant  Menu </h1>
 
-<!-->
-
-    <div class="menucontainer">
-        <div class="menucard">
-            <div class="face face1">
-                <div class="menucontent">
-                    <h2> Empanadas</h2>
-                    <p>
-                        These savoury pouches of fried dough can be found all over South America. There are tons of varieties and stuffings – from tuna fish to chicken and corn.
-                        The flour or corn-based dough is then folded over this filling and cooked by frying or baking.
-                        <br /> ⭐⭐⭐⭐⭐
-                    </p>
-                    <a href="#">Add to card </a>
-                    <a href="#"> ❤️</a>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="react"> <h3>Empanada </h3> <br /><h4>Rs.120.00</h4> </div>
-                <br />  <div class="menuimg"> <img src="~/lib/Images/empanada.jpg" alt="" height="110" width="140" style="border-color: black; border-radius: 8px; border-style: solid" ></div>
-
-            </div>
-        </div>
-
-
-
-
-        <div class="menucard">
-            <div class="face face1">
-                <div class="menucontent">
-                    <h2>Har Gow</h2>
-                    <p>
-                        A traditional Cantonese dumpling, ha gow is also served in dim sum. Sometimes called a “shrimp bonnet,”
-                        translucent wrappers of these shrimp dumplings are filled with shrimp chunks, scallions, and grated ginger.
-                        <br /> ⭐⭐⭐⭐
-                    </p>
-                    <a href="#">Add to cart </a>
-                    <a href="#"> ❤️</a>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <h1>Back 1</h1>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="react"> <h3>Har gow </h3><br /><h4>Rs.120.00</h4> </div>
-                <img src="~/lib/Images/Hargow.jpg" alt="" height="110" width="140"  style="border-color: black; border-radius: 8px; border-style: solid">
-            </div>
         </div>
-
-        <div class="menucard">
-            <div class="face face1">
-                <div class="menucontent">
-                    <h2> Empanadas</h2>
-                    <p>
-                        These savoury pouches of fried dough can be found all over South America. There are tons of varieties and stuffings – from tuna fish to chicken and corn.
-                        The flour or corn-based dough is then folded over this filling and cooked by frying or baking.
-                        <br /> ⭐⭐⭐⭐⭐
-                    </p>
-                    <a href="#">Add to card </a>
-                    <a href="#"> ❤️</a>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h1>Front 2</h1>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="react"> <h3>Empanada </h3><br /><h4>Rs.120.00</h4> </div>
-                <img src="~/lib/Images/empanada.jpg" alt="" height="110" width="140"  style="border-color: black; border-radius: 8px; border-style: solid">
-            </div>
-        </div>
-
-
-
-
-        <div class="menucard">
-            <div class="face face1">
-                <div class="menucontent">
-                    <h2>Har Gow</h2>
-                    <p>
-                        A traditional Cantonese dumpling, ha gow is also served in dim sum. Sometimes called a “shrimp bonnet,”
-                        translucent wrappers of these shrimp dumplings are filled with shrimp chunks, scallions, and grated ginger.
-                        <br /> ⭐⭐⭐⭐
-                    </p>
-                    <a href="#">Add to cart </a>
-                    <a href="#"> ❤️</a>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h1>Back 2</h1>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="react"> <h3>Har Gow </h3><br /> <h4>Rs.120.00</h4></div>
-                <img src="~/lib/Images/Hargow.jpg" alt="" height="110" width="140"  style="border-color: black; border-radius: 8px; border-style: solid">
-            </div>
         </div>
-
-        <div class="menucard">
-            <div class="face face1">
-                <div class="menucontent">
-                    <h2> Empanadas</h2>
-                    <p>
-                        These savoury pouches of fried dough can be found all over South America. There are tons of varieties and stuffings – from tuna fish to chicken and corn.
-                        The flour or corn-based dough is then folded over this filling and cooked by frying or baking.
-                        <br /> ⭐⭐⭐⭐⭐
-                    </p>
-                    <a href="#">Add to card </a>
-                    <a href="#"> ❤️</a>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <h1>Front 3</h1>
                 </div>
             </div>
-            <div class="face face2">
-                 <div class="react"> <h3>Empanada </h3><br /><h4>Rs.120.00</h4> </div>
-                <img src="~/lib/Images/empanada.jpg" alt="" height="110" width="140"  style="border-color: black; border-radius: 8px; border-style:solid">
-            </div>
-        </div>
-
-
-
-
-        <div class="menucard">
-            <div class="face face1">
-                <div class="menucontent">
-                    <h2>Har Gow</h2>
-                    <p>
-                        A traditional Cantonese dumpling, ha gow is also served in dim sum. Sometimes called a “shrimp bonnet,”
-                        translucent wrappers of these shrimp dumplings are filled with shrimp chunks, scallions, and grated ginger.
-                        <br /> ⭐⭐⭐⭐
-                    </p>
-                    <a href="#">Add to cart </a>
-                    <a href="#"> ❤️</a>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <h1>Back 3</h1>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="react"> <h3>Har Gow </h3><br /> <h4>Rs.120.00</h4></div>
-                <img src="~/lib/Images/Hargow.jpg" alt="" height="110" width="140"  style="border-color:black; border-radius:8px;border-style:solid" >
-            </div>
         </div>
-
-
-
-
-
     </div>
 
-
-    -->
-
-
-
-
-
-
+    <!-- Next Button -->
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
 </body>
 </html>
