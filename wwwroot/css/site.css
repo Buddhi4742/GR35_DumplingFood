@@ -712,7 +712,7 @@ p {
 .cmcontainer {
     width: 100%;
     height: 100vh;
-    background: #2d6f75;
+    background: black;
 }
 
 .book-content {
@@ -727,11 +727,12 @@ p {
 
 .book {
     position: absolute;
-    width: 65%;
+    width: 60%;
     height: 100%;
     transition: 1s;
     transform-style: preserve-3d;
     transform-origin: left;
+   
 }
 
 .face-front, .face-back {
@@ -742,7 +743,27 @@ p {
     box-sizing: border-box;
     overflow: hidden;
 }
+    .face-back h1, .face-front h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #9d0208;
+    }
+    .face-back h4, .face-front h4 {
+        font-family: Montserrat;
+        color: #e85d04;
+    }
 
+
+
+.wht {
+    background-color: #dc2f02;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 .face-front {
     box-shadow: inset 3px 0px 20px -7px black;
     border-top-left-radius: 3px;
@@ -761,7 +782,7 @@ p {
 }
 
 #portada {
-    background: url('c.jpg');
+    background: url('/lib/Images/menu.png');
 }
 
 #portada-back {
