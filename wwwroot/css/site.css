@@ -23,9 +23,8 @@ a {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-.nav-link:hover{
-    background-color:red;
-   
+.nav-link:hover {
+    background-color: #ff9770;
 }
 /*dropdown*/
 
@@ -377,7 +376,7 @@ a {
     font-size: 18px;
 }
 
-button {
+.reo {
     border: none;
     padding: 8px;
     display: inline-block;
@@ -385,7 +384,7 @@ button {
     background-color:#6a040f;
     cursor: pointer;
     width: 70%;
-    border-radius: 20px;
+    border-radius: 18px;
     font-size: 18px;
     text-align: center;
 }
@@ -719,7 +718,7 @@ p {
     width: 85%;
     min-width: 250px;
     max-width: 600px;
-    height: 480px;
+    height: 580px;
     position: relative;
     perspective: 1000px;
     transition: 1s;
@@ -742,7 +741,19 @@ p {
     padding: 15px;
     box-sizing: border-box;
     overflow: hidden;
+    align-items:center;
 }
+
+
+.face-front img, .face-back img{
+    border-radius:10px;
+}
+
+
+
+
+
+
     .face-back h1, .face-front h1 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: #9d0208;
@@ -753,21 +764,85 @@ p {
     }
 
 
+.mccard__content {
+    width: 100%;
+    height: 100%;
+}
+
+.mccard__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+    .mccard__header:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+        z-index: -1;
+        border-radius: 0px 0px 50% 0px;
+    }
+
+.pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    object-fit: cover;
+}
+
+.mccard__header h2 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mccard__body {
+    padding: 30px;
+}
+
+    .mccard__body h3 {
+        color: var(--dark);
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .mccard__body p {
+        color: var(--dark);
+        font-size: 12px;
+        line-height: 1.4;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
 
 .wht {
-    background-color: #dc2f02;
+    background-color: #774936;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 8px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
 }
 .face-front {
     box-shadow: inset 3px 0px 20px -7px black;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .face-back {
