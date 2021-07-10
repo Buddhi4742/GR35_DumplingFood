@@ -1,10 +1,88 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+@{
+    ViewData["Title"] = "Manager Reports Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 
-</body>
-</html>
+
+}
+
+
+<div class="mansaletablecontainer">
+    <div class="text-center">
+        <h1 class="display-4">Sales report</h1>
+    </div>
+
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sales</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        <th><input type="text" class="form-control" placeholder="Date" disabled style="font-weight:700; font-size:large;text-align:center;"></th>
+                        <th><input type="text" class="form-control" placeholder="Total Orders" disabled style="font-weight: 700; font-size: large; text-align: center;"></th>
+                        <th><input type="text" class="form-control" placeholder="Highest Order" disabled style="font-weight: 700; font-size: large; text-align: center;"></th>
+                        <th><input type="text" class="form-control" placeholder="HO Customer" disabled style="font-weight: 700; font-size: large; text-align: center;"></th>
+                        <th><input type="text" class="form-control" placeholder="Total Income" disabled style="font-weight: 700; font-size: large; text-align: center;"></th>
+                        <th><input type="text" class="form-control" placeholder="Most sold Item" disabled style="font-weight: 700; font-size: large; text-align: center;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021/7/1</td>
+                        <td>200</td>
+                        <td> Rs.3500</td>
+                        <td>#C0034</td>
+                        <td>Rs.12000</td>
+                        <td>Dimsums</td>
+
+                    </tr>
+                    <tr>
+                        <td>2021/7/2</td>
+                        <td>220</td>
+                        <td> Rs.2500</td>
+                        <td>#C0045</td>
+                        <td>Rs.16000</td>
+                        <td>Chicken Fried rice</td>
+
+                    </tr>
+                    <tr>
+                        <td>2021/7/3</td>
+                        <td>100</td>
+                        <td> Rs.1500</td>
+                        <td>#C0023</td>
+                        <td>Rs.8000</td>
+                        <td>Chinese noodles</td>
+
+                    </tr>
+                    <tr>
+                        <td>2021/7/4</td>
+                        <td>230</td>
+                        <td> Rs.2500</td>
+                        <td>#C0038</td>
+                        <td>Rs.15000</td>
+                        <td>Spring Rolls</td>
+
+                    </tr>
+                    <tr>
+                        <td>2021/7/5</td>
+                        <td>200</td>
+                        <td> Rs.4500</td>
+                        <td>#C0034</td>
+                        <td>Rs.15000</td>
+                        <td>Dimsums</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
