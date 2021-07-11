@@ -71,24 +71,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 
@@ -1110,7 +1092,7 @@ a.rm-viewdetails:before {
             color: #fff;
         }
 
-            .container > header h2 a:hover {
+            .menucontainer > header h2 a:hover {
                 color: #e6b741;
             }
 
@@ -2093,6 +2075,8 @@ a.rm-viewdetails:before {
     margin-top: 15px;
    
 }
+
+
     .mansaletablecontainer .filterable .panel-heading {
         background-color: #0f0c51;
     }
@@ -2146,61 +2130,120 @@ a.rm-viewdetails:before {
 
 
 
+.mannotitablecontainer table {
+    width: 1150px;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-size: larger;
+}
+
+.mannotitablecontainer .filterable {
+    margin-top: 15px;
+}
+
+    .mannotitablecontainer .filterable .panel-heading {
+        background-color: #0f0c51;
+    }
+
+        .mannotitablecontainer .filterable .panel-heading .pull-right {
+            margin-top: -20px;
+        }
+
+.mannotitablecontainer table {
+    width: 1150px;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-size: larger;
+}
+
+    .mannotitablecontainer table td {
+        height: 60px;
+        text-align: center;
+    }
+
+    .mannotitablecontainer table tr th {
+        height: 60px;
+        background-color: #8bc352;
+        font-weight: 700;
+    }
+
+.mannotitablecontainer tr:hover {
+    background-color: #2da799;
+}
+
+.mannotitablecontainer .filterable .filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+}
+
+    .mannotitablecontainer .filterable .filters input[disabled]::-webkit-input-placeholder {
+        color: #333;
+    }
+
+    .mannotitablecontainer .filterable .filters input[disabled]::-moz-placeholder {
+        color: #333;
+    }
+
+    .mannotitablecontainer .filterable .filters input[disabled]:-ms-input-placeholder {
+        color: #333;
+    }
 
 
-
-.notification .box::-webkit-scrollbar-track {
+.maninvennotification .box::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px black;
     background-color: #F5F5F5;
     border-radius: 5px;
-    
 }
 
-.notification .box::-webkit-scrollbar {
+.maninvennotification .box::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;
     border-radius: 5px
 }
 
-.notification .box::-webkit-scrollbar-thumb {
+.maninvennotification .box::-webkit-scrollbar-thumb {
     background-color: black;
     border: 2px solid black;
     border-radius: 5px
 }
 
-.notification header {
+.maninvennotification header {
     -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
     box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
     height: 110px;
     vertical-align: middle;
 }
 
-.notification h1 {
+.maninvennotification h1 {
     float: left;
     padding: 10px 30px
 }
 
-.notification body {
+.maninvennotification body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
 
-.notification .icons {
+.maninvennotification .icons {
     display: inline;
     float: right
 }
 
-.notification {
+.maninvennotification {
     padding-top: 30px;
     position: relative;
     display: inline-block;
 }
 
-    .notification .number {
+    .maninvennotification .number {
         height: 32px;
         width: 32px;
-        font-size:20px;
+        font-size: 20px;
         background-color: #d63031;
         border-radius: 20px;
         color: white;
@@ -2213,16 +2256,16 @@ a.rm-viewdetails:before {
         border-width: 2px;
     }
 
-        .notification .number:empty {
+        .maninvennotification .number:empty {
             display: none;
         }
 
-    .notification .notBtn {
+    .maninvennotification .notBtn {
         transition: 0.5s;
         cursor: pointer
     }
 
-    .notification .fa {
+    .maninvennotification .fa {
         font-size: 25pt;
         padding-bottom: 10px;
         color: black;
@@ -2230,7 +2273,7 @@ a.rm-viewdetails:before {
         margin-left: 40px;
     }
 
-    .notification .box {
+    .maninvennotification .box {
         width: 400px;
         height: 0px;
         border-radius: 10px;
@@ -2247,35 +2290,35 @@ a.rm-viewdetails:before {
         cursor: pointer;
     }
 
-    .notification .fa:hover {
+    .maninvennotification .fa:hover {
         color: #d63031;
     }
 
-    .notification .notBtn:hover > .box {
+    .maninvennotification .notBtn:hover > .box {
         height: 60vh
     }
 
-    .notification .content {
+    .maninvennotification .content {
         padding: 20px;
         color: black;
         vertical-align: middle;
         text-align: left;
     }
 
-    .notification .gry {
+    .maninvennotification .gry {
         background-color: #F4F4F4;
     }
 
-    .notification .top {
+    .maninvennotification .top {
         color: black;
         padding: 10px
     }
 
-    .notification .display {
+    .maninvennotification .display {
         position: relative;
     }
 
-    .notification .cont {
+    .maninvennotification .cont {
         position: absolute;
         top: 0;
         width: 100%;
@@ -2283,11 +2326,11 @@ a.rm-viewdetails:before {
         background-color: #F4F4F4;
     }
 
-        .notification .cont:empty {
+        .maninvennotification .cont:empty {
             display: none;
         }
 
-    .notification .stick {
+    .maninvennotification .stick {
         text-align: center;
         display: block;
         font-size: 50pt;
@@ -2295,55 +2338,55 @@ a.rm-viewdetails:before {
         padding-left: 80px
     }
 
-        .notification .stick:hover {
+        .maninvennotification .stick:hover {
             color: black;
         }
 
-    .notification .cent {
+    .maninvennotification .cent {
         text-align: center;
         display: block;
     }
 
-    .notification .sec {
+    .maninvennotification .sec {
         padding: 25px 10px;
         background-color: #F4F4F4;
         transition: 0.5s;
     }
 
-    .notification .profCont {
+    .maninvennotification .profCont {
         padding-left: 15px;
         padding-bottom: 25px;
     }
 
-    .notification .profile {
+    .maninvennotification .profile {
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         width: 75px;
         float: left;
     }
 
-    .notification .txt {
+    .maninvennotification .txt {
         vertical-align: top;
         font-size: 1.25rem;
         padding: 5px 10px 0px 115px;
     }
 
-    .notification .sub {
+    .maninvennotification .sub {
         font-size: 1rem;
         color: grey;
     }
 
-    .notification .new {
+    .maninvennotification .new {
         border-style: none none solid none;
         border-color: red;
     }
 
-    .notification .sec:hover {
+    .maninvennotification .sec:hover {
         background-color: #BFBFBF;
     }
-    .notification .new:hover {
+    .maninvennotification .new:hover {
         background-color: #e26b6b;
-        color:black;
+        color: black;
     }
 
 
