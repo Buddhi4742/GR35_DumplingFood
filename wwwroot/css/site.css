@@ -167,21 +167,21 @@ body {
 
 
 .dashboardcard:nth-child(1) .mdcface.face2 {
-    background-image: linear-gradient( 40deg, #E41505 0%, #EA8A0F 45%, #E41505 100% );
+    background-image: linear-gradient( 40deg, #E41505 0%, #EA8A0F 45%, #F46541 100% );
     border-radius: 15px;
 }
 
 .dashboardcard:nth-child(2) .mdcface.face2 {
-    background-image: linear-gradient( 40deg, #E41505 0%, #EA8A0F 45%, #E41505 100% );
+    background-image: linear-gradient( 40deg, #E41505 0%, #EA4335 45%, #E41505 100% );
     border-radius: 15px;
 }
 
 .dashboardcard:nth-child(3) .mdcface.face2 {
-    background-image: linear-gradient( 40deg, #E41505 0%, #EA8A0F 45%, #E41505 100% );
+    background-image: linear-gradient( 40deg, #E41505 0%, #F46541 45%, #E41505 100% );
     border-radius: 15px;
 }
 .dashboardcard:nth-child(4) .mdcface.face2 {
-    background-image: linear-gradient( 40deg, #E41505 0%, #EA8A0F 45%, #E41505 100% );
+    background-image: linear-gradient( 40deg, #F46541 0%, #EA8A0F 45%, #E41505 100% );
     border-radius: 15px;
 }
 
@@ -245,11 +245,11 @@ body {
 }
 
     .mdtccard:nth-child(1) {
-        background-image: linear-gradient( 40deg, #F1DEC5 0%, #2848D4 45%, #FE7105 100% );
+        background-image: linear-gradient( 40deg, #2848D4 0%, #EA8A0F 45%, #FE7105 100% );
     }
 
     .mdtccard:nth-child(2) {
-        background-image: linear-gradient(45deg,#F1DEC5, #FE7105);
+        background-image: linear-gradient(45deg,#F46541, #EA8A0F 45%,#2848D4);
     }
 
 
