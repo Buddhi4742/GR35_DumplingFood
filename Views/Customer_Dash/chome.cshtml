@@ -9,13 +9,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -27,7 +27,7 @@
                 <br />       You have ordered 6 times! Thank you! 
             </p>
             <div class="skills">
-                <button><a href="#"> Order Now</a></button>
+                <button class="skl"> <a  asp-area="" asp-controller="Customer_Dash" asp-action="Menu"> Order Now </a></button>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
 
 
 
-    <h1 style="background-color:red">Favourites </h1>
+    <h1 style="background-color: #E41505 ">Favourites </h1>
 
 
     <ul class="favcards">
@@ -65,6 +65,7 @@
                         or served as crudits,enjoyed with a Bloody Mary.
                     </p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button class="ffbutton"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
@@ -86,6 +87,7 @@
                     </div>
                     <p class="favcard__description">The best beef noodle soup is steaming, steaming, hot! Best in a bowl that is not too big nor too small.</p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button class="ffbutton"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
@@ -109,6 +111,7 @@
                         placed into pan and fried with minimal accompaniment.
                     </p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button class="ffbutton"><span> <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
@@ -130,13 +133,14 @@
                     </div>
                     <p class="favcard__description">Cooked with secret receipe, Chunwei brined pork ears are delicious, easy to use and full of favors.</p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button class="ffbutton"><span> <i class="fa fa-trash"></i> Remove  </span></button>
                 </div>
             </a>
         </li>
 
     </ul>
 
-    <h1 style="background-color:red">Menu</h1>
+    <h1 style="background-color:#E41505">Menu</h1>
 
     <img src="~/lib/Images/menu.png"  height="600"/>
 

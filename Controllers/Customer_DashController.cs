@@ -18,7 +18,7 @@ namespace Dumpling_Food.Controllers
         {
             _logger = logger;
         }
-
+   
         public IActionResult Chome()
         {
             return View();
@@ -37,6 +37,10 @@ namespace Dumpling_Food.Controllers
             return View();
         }
         public IActionResult Cart()
+        {
+            return View();
+        }
+        public IActionResult EditProfile()
         {
             return View();
         }

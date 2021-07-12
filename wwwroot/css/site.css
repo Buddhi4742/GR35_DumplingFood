@@ -9,7 +9,7 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #030e1a;
 }
 
 .btn-primary {
@@ -92,7 +92,7 @@ a {
 .inner-section {
     width: 55%;
     float: right;
-    background-color: #E48900;
+    background-color: #FE7105;
     padding: 140px;
     box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
 }
@@ -111,20 +111,20 @@ a {
     margin-bottom: 40px;
 }
 
-.skills button {
+.skl {
     font-size: 22px;
     text-align: center;
     letter-spacing: 2px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 8px;
     width: 200px;
-    background-color:red;
+    background-color: #E41505;
     color: white;
     cursor: pointer;
 }
 
-    .skills button:hover {
+    .skl:hover {
         transition: 1s;
         background-color: #ecf5f5;
         color: red;
@@ -156,7 +156,7 @@ a {
         padding: 60px;
     }
 
-    .skills button {
+    .skl{
         font-size: 19px;
         padding: 5px;
         width: 160px;
@@ -215,10 +215,10 @@ a {
     right: 0;
     z-index: 1;
     border-radius: calc(var(--curve) * 1px);
-    background-color: #f08080;
+    background-color: #F46541;
     transform: translateY(100%);
     transition: 0.2s ease-in-out;
-    color:black;
+    color: black;
 }
 
 .favcard:hover .favcard__overlay {
@@ -235,7 +235,7 @@ a {
     align-items: center;
     gap: 2rem;
     border-radius: calc(var(--curve) * 1px) 0 0 0;
-    background-color: #f08080;
+    background-color: #F46541;
     padding: 2em;
     transform: translateY(-100%);
     transition: 0.2s ease-in-out;
@@ -288,7 +288,7 @@ a {
 .favcard__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: var(--black-color);
+    color: #071626;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -296,7 +296,7 @@ a {
 }
 .ffbutton {
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: #063a75;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -365,9 +365,9 @@ a {
 .rcard {
     box-shadow: 0 4px 10px 0 rgba(255, 0, 0, 0.8);
     max-width: 310px;
-    height:500px;
+    height: 500px;
     margin: auto;
-    background-color: #fec89a;
+    background-color: #EA4335;
     text-align: center;
     border-radius: 40px;
     padding-bottom: 5px;
@@ -393,7 +393,7 @@ a {
     background-color:#6a040f;
     cursor: pointer;
     width: 70%;
-    border-radius: 18px;
+    border-radius: 12px;
     font-size: 18px;
     text-align: center;
   
@@ -409,7 +409,7 @@ li {
     color: red;
 }
 
-     button:hover {
+     .reo:hover {
         opacity: 0.6;
         background-color:black;
     }
@@ -509,7 +509,7 @@ li {
                 }
 
             .menucontainer .menucard .face.face2 {
-                background-color: #c30707;
+                background-color:#E41505;
                 transition: 0.5s;
                 border-radius: 8px;
                 box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -735,6 +735,13 @@ p {
     height: 100vh;
     background: black;
 }
+.cmcontainer h4{
+    color:crimson;
+}
+
+
+
+
 
 .book-content {
     width: 85%;
@@ -986,7 +993,7 @@ p {
     bottom: 20px;
     right: 20px;
     padding: 10px 25px;
-    background-color: red;
+    background-color: #E41505;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -1017,10 +1024,12 @@ p {
 
 /* Modal Content */
 .modl-content {
-    background-color: #fec5bb;
+    background-color: #EA4335;
     margin: auto;
     padding: 20px;
+    color:white;
     border: 1px solid #888;
+    border-radius:7px;
     width: 80%;
 }
 .sure-remove {
@@ -1029,12 +1038,12 @@ p {
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
-    background-color:brown;
+    background-color: #FE7105;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: dimgray;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -1057,7 +1066,7 @@ p {
     width: 40px;
     padding: 5px;
     text-align: center;
-    background-color:#3a0ca3
+
 }
 
 .fa {
@@ -1071,7 +1080,7 @@ p {
     height: 240px;
     border: 1px solid silver;
     border-radius: 5px;
-   
+    background-color: #F1DEC5;
 }
 
     .ctcart-total p {
