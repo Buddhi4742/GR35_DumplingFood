@@ -245,11 +245,11 @@ body {
 }
 
     .mdtccard:nth-child(1) {
-        background-image: linear-gradient( 40deg, white 0%, #FE7105 45%, white 100% );
+        background-image: linear-gradient( 50deg, #EA8A0F 0%, #941fa9 55% ,#49105a 100% );
     }
 
     .mdtccard:nth-child(2) {
-        background-image: linear-gradient( 40deg, white 0%, #FE7105 45%, white 100% );
+        background-image: linear-gradient( 300deg, #EA8A0F 0%, #941fa9 55%,#49105a 100% );
     }
 
 
@@ -330,11 +330,11 @@ body {
 
 
 .mdtccard:nth-child(1) .mdtccard__overlay {
-    background-image: linear-gradient(45deg,#F1DEC5,#918686);
+    background-image: linear-gradient(45deg,#F1DEC5,#715050);
 }
 
 .mdtccard:nth-child(2) .mdtccard__overlay {
-    background-image: linear-gradient(45deg,#F1DEC5,#918686);
+    background-image: linear-gradient(45deg,#F1DEC5,#715050);
 }
 
 
@@ -359,6 +359,7 @@ body {
 .mdtccard__content h2 {
     margin: 0;
     margin-bottom: 16px;
+    color:#76227b;
 }
 
 
