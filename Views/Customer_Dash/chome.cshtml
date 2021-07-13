@@ -24,10 +24,10 @@
             <h1>Hello! Helen 🤩</h1>
             <p class="custext">
                 Welcome to the Dumpling Food restaurant Customer Dashboard!
-                <br />       You have ordered 6 times! Thank you! 
+                <br />       You have ordered 6 times! Thank you!
             </p>
             <div class="skills">
-                <button class="skl"> <a  asp-area="" asp-controller="Customer_Dash" asp-action="Menu"> Order Now </a></button>
+                <button class="skl"> <a asp-area="" asp-controller="Customer_Dash" asp-action="Menu"> Order Now </a></button>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
 
 
         <li>
-            <a href="#" class="favcard">
+            <a href="#" class="favcard" id="favu">
                 <img src="~/lib/Images/beef& celery.jpg" class="favcard__image" alt="">
                 <div class="favcard__overlay">
                     <div class="favcard__header">
@@ -65,13 +65,13 @@
                         or served as crudits,enjoyed with a Bloody Mary.
                     </p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button class="ffbutton"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
+                    <button  onclick="delFunction()" class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
 
         <li>
-            <a href="#" class="favcard">
+            <a href="#" class="favcard" id="favu">
                 <img src="~/lib/Images/beef-noodle-soup.jpg" class="favcard__image" alt="">
                 <div class="favcard__overlay">
                     <div class="favcard__header">
@@ -87,12 +87,12 @@
                     </div>
                     <p class="favcard__description">The best beef noodle soup is steaming, steaming, hot! Best in a bowl that is not too big nor too small.</p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button class="ffbutton"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
+                    <button onclick="delFunction()"  class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
         <li>
-            <a href="#" class="favcard">
+            <a href="#" class="favcard" id="favu">
                 <img src="~/lib/Images/friedegg.jpg" class="favcard__image" alt="">
                 <div class="favcard__overlay">
                     <div class="favcard__header">
@@ -111,13 +111,13 @@
                         placed into pan and fried with minimal accompaniment.
                     </p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button class="ffbutton"><span> <i class="fa fa-trash"></i>Remove  </span></button>
+                    <button onclick="delFunction()"  class="ffbutton" id="favrem"><span> <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
 
         <li>
-            <a href="#" class="favcard">
+            <a href="#" class="favcard" id="favu">
                 <img src="~/lib/Images/spicy brine pork ear.jpg" class="favcard__image" alt="">
                 <div class="favcard__overlay">
                     <div class="favcard__header">
@@ -133,16 +133,27 @@
                     </div>
                     <p class="favcard__description">Cooked with secret receipe, Chunwei brined pork ears are delicious, easy to use and full of favors.</p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button class="ffbutton"><span> <i class="fa fa-trash"></i> Remove  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span> <i class="fa fa-trash"></i> Remove</span>  </button>
                 </div>
             </a>
         </li>
 
     </ul>
 
+
+
+
+
+
+
+
+
+
+
+
     <h1 style="background-color:#E41505">Menu</h1>
 
-    <img src="~/lib/Images/menu.png"  height="600"/>
+    <img src="~/lib/Images/menu.png" height="600" />
 
 
 
