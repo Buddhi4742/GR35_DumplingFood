@@ -10,7 +10,7 @@ namespace Dumpling_Food.Controllers.Login_and_registration
     public class Login : Controller
     {
         // GET: login
-        public IActionResult userlogin()
+        public IActionResult Userlogin()
         {
             return View();
         }
