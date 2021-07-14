@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Dumpling_Food.Models.User
 {
-    public class loginModel
+    public class LoginModel
     {
         public string userName { get; set; }
         public string password { get; set; }

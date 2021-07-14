@@ -14,6 +14,10 @@ namespace Dumpling_Food.Controllers.Login_and_registration
         {
             return View();
         }
+        public IActionResult Userregister()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();
