@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dumpling_Food.Controllers.Login_and_registration
 {
-    public class login : Controller
+    public class Login : Controller
     {
         // GET: login
         public IActionResult userlogin()
