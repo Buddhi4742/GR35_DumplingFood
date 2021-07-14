@@ -8,53 +8,26 @@ body {
     /*background-color: #f8002f;
     background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);*/
 }
-section{
-    padding:50px 0;
-}
+
 section #about {
  
 }
 
 
-
-
-
-/*------------------- Header--------------------------*/
-#header {
-    top: 50px;
-    height: 70px;
-    z-index: 997;
-    transition: all 0.5s;
-    padding: 10px 0;
-    background: rgba(26, 24, 22, 0.85);
-}
-
-    #header.header-transparent {
-        background: transparent;
-    }
-
-    #header.header-scrolled {
-        top: 0;
-        background: rgba(26, 24, 22, 0.85);
-    }
-@media (max-width: 992px) {
-    #header {
-        top: 0;
-        background: rgba(26, 24, 22, 0.85);
-    }
-}
-
-
 /*--------------------------Nav bar-----------------------------*/
 .navbar {
-    background-color: #ffffff00;
+    background-color: #F1DEC5A0;
+    position: fixed;
+    top: 0;
 }
 
 
 .logo-text {
     font-family: 'Reggae One', cursive;
-    margin-top:16px;
-    margin-left:5px;
+    color: black;
+    padding-top: 8px;
+    margin-left: 22px;
+    margin-bottom: unset;
 }
 a.navbar-brand {
   white-space: normal;
@@ -62,20 +35,20 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
     margin-top: 10px;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.navbar-dark .navbar-nav .nav-link .login-btn {
+.navbar-light .navbar-nav .nav-link .login-btn {
     margin-top:-5px;
 }
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
-        color:black;
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: black;
 }
-.navbar-dark .navbar-nav .nav-link {
-    color:black;
+.navbar-light .navbar-nav .nav-link {
+    color: black;
 }
 .navbar-nav{
     text-align:center;
@@ -83,8 +56,8 @@ a.navbar-brand {
 .nav-link{
     padding:.2rem 1rem;
 }
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color:black !important;
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #E41505 !important;
 }
 .w-100{
     height:100vh;
@@ -108,7 +81,8 @@ a.navbar-brand {
     object-fit: cover;
 }
 .carousel-caption {
-    bottom: 320px;
+    padding-bottom: 100px;
+    color: white;
 }
 .carousel-caption h5 {
     font-size:45px;
@@ -148,19 +122,19 @@ a.navbar-brand {
 }
 
 .login-btn {
-    background-color: white;
+    background-color: #FE7105;
     color: black;
     border: none;
-    border-radius: 28px;
+    border-radius: 10px;
     padding: 4px 20px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
     margin: 4px 2px;
 }
     .login-btn:hover {
-        background-color: black;
-        color:white;
+        background-color: #E41505;
+        color: white;
     }
 /* -------------------------slider-Button------------------------- */
 .button-slider-cta {
@@ -333,6 +307,9 @@ button.accept-policy {
 .about .section-title{
     text-align:center;
 }
+.about .section-title p {
+     margin-bottom:2rem;
+}
 .about .text {
     display: flex;
     flex-direction: column;
@@ -346,6 +323,7 @@ button.accept-policy {
      font-size: 1rem;
      letter-spacing: 2px;
 }
+
 @media (max-width: 512px) {
     .about .pic {
         width: 100%;
@@ -357,6 +335,53 @@ button.accept-policy {
     }
 }
 
+.specials .swiper-container {
+}
+
+.specials .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.specials img {
+    border-radius:10px;
+    
+}
+
+.specials{
+    text-align:center;
+
+}
+.specials .section-title {
+    padding-top:20px;
+}
+.specials.swiper {
+    position: unset !important;
+}
+
+.specials.swiper-pagination-bullet-active {
+    color: rebeccapurple !important;
+}
+
+
+
+.menu {
+    color: white;
+}
 
 .menu .pic {
     border-radius: 20px;
@@ -407,23 +432,171 @@ button.accept-policy {
         justify-content:center;
     }
 }
- 
+
+
+
+.section .map {
+    padding:unset;
+}
+
+
+
+.contact .section-title{
+    text-align:center;
+    
+}
+.contact .section-title h2{
+    font-family:'Reggae One'
+}
+
+.contact .info-wrap {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contact .info {
+    background: #fff;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #ffb03b;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fff6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #433f39;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #7a7368;
+}
+
+.contact .info:hover i {
+    background: #ffb03b;
+    color: #fff;
+}
+
+.contact .send-massage-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+}
+
+.contact .send-massage-form .form-group {
+    padding-bottom: 8px;
+}
+
+
+
+.contact .send-massage-form input,
+.contact .send-massage-form textarea {
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .send-massage-form input {
+    height: 44px;
+    border-radius:20px;
+}
+
+.contact .send-massage-form textarea {
+    padding: 10px 12px;
+    border-radius:20px;
+}
+
+.contact .send-massage-form button[type="submit"] {
+    background: #ffb03b;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact .send-massage-form button[type="submit"]:hover {
+    background: #ffa012;
+}
+
+
+
+
+
+
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+#footer {
+    background: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+#footer p {
+    font-size: 15px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #46423b;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background: red;
+}
+
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+
+#footer .credits {
+    font-size: 13px;
 }
