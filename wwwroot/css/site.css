@@ -21,6 +21,10 @@ section #about {
     top: 0;
 }
 
+.header1 {
+    margin-top: 4rem;
+}
+
 
 .logo-text {
     font-family: 'Reggae One', cursive;
