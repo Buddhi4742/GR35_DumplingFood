@@ -5,37 +5,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Dumpling_Food.Controllers.Login_and_registration
+namespace Dumpling_Food.Controllers
 {
-    public class Login : Controller
+    public class UserController : Controller
     {
-        //GET: login
-        public IActionResult Userlogin()
+        private readonly Services.DbServices dbServices;
+
+        public UserController(Services.DbServices dbServices)
         {
-            return View();
-        }
-        public IActionResult Userregister()
-        {
-            return View();
-        }
-        public ActionResult Index()
-        {
-            return View();
+            this.dbServices = dbServices;
         }
 
-        // GET: login/Details/5
+        // GET: UserController
+        //public ActionResult UserView()
+        //{
+        //    return View(dbServices.Get());
+        //}
+        public IActionResult UserView()
+        {
+            return View(dbServices.Get());
+        }
+
+        // GET: UserController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: login/Create
+        // GET: UserController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: login/Create
+        // POST: UserController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -50,13 +53,13 @@ namespace Dumpling_Food.Controllers.Login_and_registration
             }
         }
 
-        // GET: login/Edit/5
+        // GET: UserController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: login/Edit/5
+        // POST: UserController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -71,13 +74,13 @@ namespace Dumpling_Food.Controllers.Login_and_registration
             }
         }
 
-        // GET: login/Delete/5
+        // GET: UserController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: login/Delete/5
+        // POST: UserController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
