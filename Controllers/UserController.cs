@@ -47,7 +47,7 @@ namespace Dumpling_Food.Controllers
             if (ModelState.IsValid)
             {
                 dbServices.Create(user);
-                return RedirectToAction(nameof(Register));
+                return RedirectToAction(nameof(UserView));
             }
             return View(user);
         }
