@@ -104,3 +104,20 @@ window.onclick = function (event) {
 		modl.style.display = "none";
 	}
 }
+
+
+//cart 
+$(function () {
+	$('#addi').click(function () {
+		$('.brmodal').addClass('open');
+
+		if ($('.brmodal').hasClass('open')) {
+			$('.ctcontainer').addClass('blur');
+		}
+	});
+
+	$('.close').click(function () {
+		$('.brmodal').removeClass('open');
+		$('.ctcontainer').removeClass('blur');
+	});
+});

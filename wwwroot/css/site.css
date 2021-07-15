@@ -296,9 +296,9 @@ a {
 }
 .ffbutton {
     border-radius: 4px;
-    background-color: #063a75;
+    background-color: #cc1db8;
     border: none;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-size: 18px;
     padding: 20px;
@@ -333,6 +333,229 @@ a {
         opacity: 1;
         right: 0;
     }
+
+    /*Top rated */
+.rated {
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+.ratwrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.ratcols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.ratcol {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.ratcontainer {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.ratfront,
+.ratback {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.ratback {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%,#596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%,#596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%,#596a72 100%);
+}
+
+.ratfront:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.ratcontainer:hover .front,
+.ratcontainer:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.ratback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ratinner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.ratcontainer .ratback {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ratcontainer .ratfront {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ratcontainer:hover .ratback {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ratcontainer:hover .ratfront {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ratfront .ratinner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+    .ratfront .ratinner p:after {
+        content: '';
+        width: 4rem;
+        height: 2px;
+        position: absolute;
+        background: #C6D4DF;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -.75rem;
+    }
+
+.ratfront .ratinner span {
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.addo {
+    border-radius: 4px;
+    background-color: #F46541;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@media screen and (max-width: 64rem) {
+    .ratcol {
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .ratcol {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem) {
+    .ratcol {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1069,6 +1292,112 @@ p {
 
 }
 
+.ctcontainer.blur {
+    filter: blur(5px);
+}
+
+.brmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color:bisque;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+    .brmodal .brcontent {
+        position: relative;
+        padding: 10px;
+        align-content:center;
+        width: 400px;
+        height: 500px;
+        border-radius: 8px;
+        background-color: #f46541;
+        box-shadow: rgba(112, 128, 175, 0.2) 0px 16px 24px 0px;
+        transform: scale(0);
+        transition: transform 300ms cubic-bezier(0.57, 0.21, 0.69, 1.25);
+    }
+
+    .brmodal .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: #7080af;
+        clip-path: polygon(0 10%, 10% 0, 50% 40%, 89% 0, 100% 10%, 60% 50%, 100% 90%, 90% 100%, 50% 60%, 10% 100%, 0 89%, 40% 50%);
+    }
+
+    .brmodal.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+        .brmodal.open .brcontent {
+            transform: scale(1);
+        }
+/*popup form*/
+
+.form-popup {
+    
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    color:black;
+}
+
+    /* Full-width input fields */
+    .form-container select, .form-container input[type=number] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+        color: black;
+    }
+
+        /* When the inputs get focus, do something */
+        .form-container input[type=number]:focus, .form-container select:focus {
+            background-color: #ddd;
+            outline: none;
+            color: black;
+        }
+
+    /* Set a style for the submit/login button */
+    .form-container .atn {
+        background-color: #f46541;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+
+
+
+
+
+
+
 
 
 
@@ -1167,6 +1496,7 @@ a {
 }
 
 .login-root {
+    margin-top:0;
     background: #fff;
     display: flex;
     width: 100%;

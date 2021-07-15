@@ -14,7 +14,11 @@
     <link rel="stylesheet" type="text/css" href="~/css/site.css">
 
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <style>
+        {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +48,7 @@
                         <p class="ctproduct-quantity">
                             Qnt: <input value="1" name="">
 
-                            <button class="ctproduct-remove" id="mybtn" >
+                            <button class="ctproduct-remove" id="mybtn">
 
                                 <i class="fa fa-trash" aria-hidden="true"></i>
 
@@ -70,7 +74,7 @@
 
 
                 </div>
-               
+
                 <div class="ctproduct">
 
                     <img src="~/lib/Images/friedegg.jpg">
@@ -118,7 +122,7 @@
 
 
 
-                <button class="addi"> Add item</button>
+                <button class="addi" id="addi"> Add item</button>
 
 
 
@@ -145,7 +149,7 @@
 
                 </p>
 
-                
+
                 <p>
 
                     <span>Total Payment</span>
@@ -161,8 +165,34 @@
         </div>
 
     </div>
+    <div class="brmodal">
+        <div class="brcontent">
+            <div class="close"></div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Add Item to cart </h1>
 
-    <script src="~/js/site.js"> </script>
+                    <label for="Item"><b>Item Name</b></label>
+                    <select name="Food" id="Foods">
+                        <option value="Fried Egg">Fried Egg</option>
+                        <option value="Chicken& mushroom">Chicke &Aacute; mushroom</option>
+                        <option value="Zuccine & egg">Zuccine & Egg </option>
+                        <option value="Spicy brine pork ear">Spicy brine pork ear</option>
+                    </select>
+
+                    <label for="quan"><b>Quantity</b></label>
+                    <input type="number" placeholder="1" name="quan" required>
+
+                    <button type="submit" class="atn">Add </button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+    <script src="~/js/site.js"></script>
 
 </body>
 

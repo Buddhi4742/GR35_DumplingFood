@@ -17,6 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <div class="cusabout">
@@ -65,7 +72,7 @@
                         or served as crudits,enjoyed with a Bloody Mary.
                     </p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button  onclick="delFunction()" class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
@@ -87,7 +94,7 @@
                     </div>
                     <p class="favcard__description">The best beef noodle soup is steaming, steaming, hot! Best in a bowl that is not too big nor too small.</p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button onclick="delFunction()"  class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
@@ -111,7 +118,7 @@
                         placed into pan and fried with minimal accompaniment.
                     </p>
                     <button class="ffbutton"><span>Add to cart  </span></button>
-                    <button onclick="delFunction()"  class="ffbutton" id="favrem"><span> <i class="fa fa-trash"></i>Remove  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span> <i class="fa fa-trash"></i>Remove  </span></button>
                 </div>
             </a>
         </li>
@@ -145,15 +152,85 @@
 
 
 
+    <!--top rated-->
 
 
 
 
 
+    <h1 style="background-color:#E41505" class="rated">Top Rated</h1>
 
-    <h1 style="background-color:#E41505">Menu</h1>
+    <div class="ratwrapper">
+      
+        <div class="ratcols">
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image:url(../lib/Images/Chicken&mushroom.jpg)">
+                        <div class="ratinner">
+                            <p>Chicken & mushroom</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image:url(../lib/Images/porkmeatball.jpg) ">
+                        <div class="ratinner">
+                            <p>Porkmeatball</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image: url(../lib/Images/pork&scallion.jpg)">
+                        <div class="ratinner">
+                            <p>Porkribs & Scallion</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image: url(../lib/Images/friedegg.jpg)">
+                        <div class="ratinner">
+                            <p> Friedegg</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <img src="~/lib/Images/menu.png" height="600" />
+        </div>
+    </div>
+    
 
 
 
