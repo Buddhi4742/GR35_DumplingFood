@@ -1,0 +1,86 @@
+﻿
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+@section scripts
+{
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+}
+
+<style>
+    body {
+        background-image: url("https://wi.wallpapertip.com/wsimgs/172-1722866_wallpaper-gradient-pink-white-linear-light-pink-light.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <br /><br /><br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <button type="button" class="align-self-end btn btn-block btn-sm" style="background-color:#EA8A0F">Dashboard</button>
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center align-text-top">
+                    <h1>Depletion Report Viewer</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="text-center align-text-top">
+        <h6>Select a data from below and click on generate repot to view depletion report for the selected date</h6>
+    </div>
+    <br /><br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <input class="align-text-top" style="width:100%" type="date" id="reportDate" name="reportDate">
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <input class="btn btn-success" style="width:100%" type="submit" id="report" name="report" value="Generate Depletion Report">
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
