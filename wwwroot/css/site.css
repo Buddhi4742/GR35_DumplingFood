@@ -446,7 +446,7 @@ button.accept-policy {
     
 }
 .contact .section-title h2{
-    font-family:'Reggae One'
+    
 }
 
 .contact .info-wrap {
@@ -478,7 +478,7 @@ button.accept-policy {
     font-weight: 600;
     margin-bottom: 5px;
     color: #433f39;
-    font-family: "Poppins", sans-serif;
+    
 }
 
 .contact .info p {
@@ -489,7 +489,7 @@ button.accept-policy {
 }
 
 .contact .info:hover i {
-    background: #ffb03b;
+    background: #FE7105;
     color: #fff;
 }
 
@@ -524,7 +524,7 @@ button.accept-policy {
 }
 
 .contact .send-massage-form button[type="submit"] {
-    background: #ffb03b;
+    background: #FE7105;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -533,7 +533,7 @@ button.accept-policy {
 }
 
 .contact .send-massage-form button[type="submit"]:hover {
-    background: #ffa012;
+    background: #F46541;
 }
 
 
@@ -557,7 +557,7 @@ button.accept-policy {
 #footer h3 {
     font-size: 36px;
     font-weight: 700;
-    color: white;
+    color: #FE7105;
     position: relative;
     padding: 0;
     margin: 0 0 15px 0;
@@ -590,7 +590,7 @@ button.accept-policy {
 }
 
 #footer .social-links a:hover {
-    background: red;
+    background: #FE7105;
 }
 
 #footer .copyright {
