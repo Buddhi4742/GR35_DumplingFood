@@ -1,0 +1,248 @@
+﻿@{
+    ViewData["Title"] = "home Page";
+    Layout = "~/Views/Shared/_LayoutCustomerlogged.cshtml";
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="cusabout">
+        <div class="inner-section">
+            <h1>Hello! Helen 🤩</h1>
+            <p class="custext">
+                Welcome to the Dumpling Food restaurant Customer Dashboard!
+                <br />       You have ordered 6 times! Thank you!
+            </p>
+            <div class="skills">
+                <button class="skl"> <a asp-area="" asp-controller="Customer_Dash" asp-action="Menu"> Order Now </a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <h1 style="background-color: #E41505" class="rated">Favourites </h1>
+
+
+    <ul class="favcards">
+
+
+
+
+        <li>
+            <a href="#" class="favcard" id="favu">
+                <img src="~/lib/Images/beef& celery.jpg" class="favcard__image" alt="">
+                <div class="favcard__overlay">
+                    <div class="favcard__header">
+                        <svg class="favcard__arc" xmlns="http://www.w3.org/2000/svg">
+                            <path />
+                        </svg>
+                        <img src="~/lib/Images/beef& celery.jpg" alt="" class="favcard__thumb">
+                        <div class="favcard__header-text">
+                            <h3 class="favcard__title">Beef & celery</h3>
+                            <span class="favcard__status"> ⭐⭐⭐⭐⭐</span>
+                            <span class="favcard__status">120.00</span>
+                        </div>
+                    </div>
+                    <p class="favcard__description">
+                        An undervalued vegetable and often an afterthought thrown into salads or soup stock,
+                        or served as crudits,enjoyed with a Bloody Mary.
+                    </p>
+                    <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="favcard" id="favu">
+                <img src="~/lib/Images/beef-noodle-soup.jpg" class="favcard__image" alt="">
+                <div class="favcard__overlay">
+                    <div class="favcard__header">
+                        <svg class="favcard__arc" xmlns="http://www.w3.org/2000/svg">
+                            <path />
+                        </svg>
+                        <img src="~/lib/Images/beef-noodle-soup.jpg" alt="" class="favcard__thumb">
+                        <div class="favcard__header-text">
+                            <h3 class="favcard__title">Beef-noodle-soup</h3>
+                            <span class="favcard__status">⭐⭐⭐⭐</span>
+                            <span class="favcard__status">120.00</span>
+                        </div>
+                    </div>
+                    <p class="favcard__description">The best beef noodle soup is steaming, steaming, hot! Best in a bowl that is not too big nor too small.</p>
+                    <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span>  <i class="fa fa-trash"></i>Remove  </span></button>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="favcard" id="favu">
+                <img src="~/lib/Images/friedegg.jpg" class="favcard__image" alt="">
+                <div class="favcard__overlay">
+                    <div class="favcard__header">
+                        <svg class="favcard__arc" xmlns="http://www.w3.org/2000/svg">
+                            <path />
+                        </svg>
+                        <img src="~/lib/Images/friedegg.jpg" alt="" class="favcard__thumb">
+                        <div class="favcard__header-text">
+                            <h3 class="favcard__title">Fried Egg</h3>
+                            <span class="favcard__status">⭐⭐⭐⭐</span>
+                            <span class="favcard__status">120.00</span>
+                        </div>
+                    </div>
+                    <p class="favcard__description">
+                        A fried egg is a cooked dish made from  eggs which are removed from their shells and
+                        placed into pan and fried with minimal accompaniment.
+                    </p>
+                    <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span> <i class="fa fa-trash"></i>Remove  </span></button>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="#" class="favcard" id="favu">
+                <img src="~/lib/Images/spicy brine pork ear.jpg" class="favcard__image" alt="">
+                <div class="favcard__overlay">
+                    <div class="favcard__header">
+                        <svg class="favcard__arc" xmlns="http://www.w3.org/2000/svg">
+                            <path />
+                        </svg>
+                        <img src="~/lib/Images/spicy brine pork ear.jpg" alt="" class="favcard__thumb">
+                        <div class="favcard__header-text">
+                            <h3 class="favcard__title">Spicy brine pork ear</h3>
+                            <span class="favcard__status">⭐⭐⭐⭐</span>
+                            <span class="favcard__status">120.00</span>
+                        </div>
+                    </div>
+                    <p class="favcard__description">Cooked with secret receipe, Chunwei brined pork ears are delicious, easy to use and full of favors.</p>
+                    <button class="ffbutton"><span>Add to cart  </span></button>
+                    <button onclick="delFunction()" class="ffbutton" id="favrem"><span> <i class="fa fa-trash"></i> Remove</span>  </button>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+
+
+
+
+
+
+    <!--top rated-->
+
+
+
+
+
+    <h1 style="background-color:#E41505" class="rated">Top Rated</h1>
+
+    <div class="ratwrapper">
+      
+        <div class="ratcols">
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image:url(../lib/Images/Chicken&mushroom.jpg)">
+                        <div class="ratinner">
+                            <p>Chicken & mushroom</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image:url(../lib/Images/porkmeatball.jpg) ">
+                        <div class="ratinner">
+                            <p>Porkmeatball</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image: url(../lib/Images/pork&scallion.jpg)">
+                        <div class="ratinner">
+                            <p>Porkribs & Scallion</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ratcol" ontouchstart="this.classList.toggle('hover');">
+                <div class="ratcontainer">
+                    <div class="ratfront" style="background-image: url(../lib/Images/friedegg.jpg)">
+                        <div class="ratinner">
+                            <p> Friedegg</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="ratback">
+                        <div class="ratinner">
+                            <p> Rs 120.00</p>
+                            <button class="addo"><span>Add to cart  </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
