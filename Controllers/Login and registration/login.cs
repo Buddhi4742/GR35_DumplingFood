@@ -18,6 +18,7 @@ namespace Dumpling_Food.Controllers.Login_and_registration
         {
             return View();
         }
+
         public ActionResult Index()
         {
             return View();
