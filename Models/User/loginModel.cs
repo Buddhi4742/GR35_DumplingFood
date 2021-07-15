@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.ComponentModel.DataAnnotations;
-
+/// <summary>
+/// /////////////////////////////////////////////car.cs model
+/// </summary>
 namespace Dumpling_Food.Models.User
 {
     public class LoginModel

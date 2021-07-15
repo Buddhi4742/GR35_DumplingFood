@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+/// <summary>
+/// ///////////////////////////////////////////////// carcontroller.cs controller file
+/// </summary>
 namespace Dumpling_Food.Controllers
 {
     public class UserController : Controller
@@ -33,25 +35,37 @@ namespace Dumpling_Food.Controllers
         }
 
         // GET: UserController/Create
-        public ActionResult Create()
+        public ActionResult Register()
         {
             return View();
         }
 
-        // POST: UserController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Create(Models.User.LoginModel user)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                dbServices.Create(user);
+                return RedirectToAction(nameof(Register));
             }
-            catch
-            {
-                return View();
-            }
+            return View(user);
         }
+
+        // POST: UserController/Create
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
         // GET: UserController/Edit/5
         public ActionResult Edit(int id)
