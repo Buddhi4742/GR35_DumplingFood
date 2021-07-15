@@ -6,8 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\site.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\Manager\" />
     <Folder Include="Models\Manager\" />
+    <Folder Include="Views\Home\" />
     <Folder Include="Views\Login\" />
   </ItemGroup>
 
