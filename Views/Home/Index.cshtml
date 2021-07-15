@@ -16,6 +16,10 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
 </head>
 <body>
@@ -31,7 +35,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="~/lib/Assets/images/slider-image-1.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption ">
                             <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">Welcome to Dumpling Food Restaurant</h5>
                             <p class="animate__animated animate__fadeInUp" style="animation-delay:0.75s;">Authentique Chinese Cuisine.</p>
                             <button class="button button-slider-cta animate__animated animate__fadeInUp" style="animation-delay: 0.25s"><span>Learn More</span></button>
@@ -39,7 +43,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="~/lib/Assets/images/slider-image-2.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption  ">
                             <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">Welcome to Dumpling Food Restaurant</h5>
                             <p class="animate__animated animate__fadeInUp" style="animation-delay:0.75s;">Authentique Chinese Cuisine.</p>
                             <button class="button button-slider-cta animate__animated animate__fadeInUp" style="animation-delay: 0.25s"><span>Order Online</span></button>
@@ -47,7 +51,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="~/lib/Assets/images/slider-image-3.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption ">
                             <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">Welcome to Dumpling Food Restaurant</h5>
                             <p class="animate__animated animate__fadeInUp" style="animation-delay: 0.75s;">Authentique Chinese Cuisine.</p>
                             <button class="button button-slider-cta animate__animated animate__fadeInUp " style="animation-delay: 0.25s"><span>Reserve Table</span></button>
@@ -67,17 +71,18 @@
         </div>
     </div>
     <section id="About" class="about py-5">
-        <div class="section-title">
-            <h2>Our Story</h2>
-            <h2><span>About US</span></h2>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        <div class="section-title container">
+            <h2>About US</h2>
+            <h4><span>Our Story</span></h4>
+            <p>New York, NY – RedFarm is open at 529 Hudson Street in the West Village. This new destination from dim sum master chef Joe Ng and Chinese food expert Ed Schoenfeld aims to be one of the most exciting and influential restaurants in the country. RedFarm brings a greenmarket sensibility to modern and inventive Chinese food and super-charged dim sum complemented by modern, rustic décor.</p>
         </div>
+        <br />
         <div class="row align-items-center container  mx-auto ">
             <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 ">
                 <h6>Dumpling Food Restaurant</h6>
-                <h2>BEST FOOD</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac gravida est. Etiam nisi leo, pellentesque at cursus ut, lacinia id elit. Suspendisse in nulla vel sapien tincidunt efficitur a nec nibh. Vestibulum luctus ultricies mollis. Quisque eget justo id quam sollicitudin volutpat. Suspendisse in eros in felis venenatis maximus eget a nisl.</p>
-                <a href="#">Learn more</a>
+                <h2>FRESHLY MADE EVERYDAY</h2>
+                <p> Each Dumpling and every bowl of Ramen are freshly handmade every day.</p>
+                
             </div>
             <div class="image col-lg-6 col-md-6 col-12 w-50 ">
                 <img class="image-fluid pic" src="~/lib/Assets/images/about-section1.jpg" />
@@ -91,15 +96,84 @@
             </div>
             <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 ">
                 <h6>Dumpling Food Restaurant</h6>
-                <h2>BEST FOOD</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac gravida est. Etiam nisi leo, pellentesque at cursus ut, lacinia id elit. Suspendisse in nulla vel sapien tincidunt efficitur a nec nibh. Vestibulum luctus ultricies mollis. Quisque eget justo id quam sollicitudin volutpat. Suspendisse in eros in felis venenatis maximus eget a nisl.</p>
-                <a href="#">Learn more</a>
+                <h2>A JOURNEY TO CHINA</h2>
+                <p>Let us take you on a culinary journey to China right here in New York City with our authentic steamed buns (xiao long bao) and hand pulled noodles. We also have a variety of delicious dishes such as dim sum, chilled plates, breakfast, and desserts from different regions of China.</p>
+                
             </div>
 
         </div>
     </section>
+    <section id="specials" class="specials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Specials</h2>
+                <p>Served from 11:00am - 4:00pm, Monday thru Friday</p>
+            </div>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="specials-food-block">
+                            <div class="specials-image"><img src="~/lib/Assets/images/specials-1.jpg" class="img-fluid w-75" alt=""></div>
+                            <div class="specials-data">
+                                <h4 class="specials-name">Rice</h4>
+                                <span class="specials-food-info">Main</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="specials-food-block">
+                            <div class="specials-image"><img src="~/lib/Assets/images/specials-2.jpg" class="img-fluid w-75 border" alt=""></div>
+                            <div class="specials-data">
+                                <h4 class="specials-name">Soup</h4>
+                                <span class="specials-food-info">Starters</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="specials-food-block">
+                            <div class="specials-image"><img src="~/lib/Assets/images/specials-3.jpg" class="img-fluid w-75" alt=""></div>
+                            <div class="specials-data">
+                                <h4 class="specials-name">Noodles</h4>
+                                <span class="specials-food-info">Main</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="specials-food-block">
+                            <div class="specials-image"><img src="~/lib/Assets/images/specials-4.jpg" class="img-fluid w-75" alt=""></div>
+                            <div class="specials-data">
+                                <h4 class="specials-name">Moon cake</h4>
+                                <span class="specials-food-info">Dessert</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="specials-food-block">
+                            <div class="specials-image"><img src="~/lib/Assets/images/specials-5.jpg" class="img-fluid w-75" alt=""></div>
+                            <div class="specials-data">
+                                <h4 class="specials-name">Meat</h4>
+                                <span class="specials-food-info">Main</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="specials-food-block">
+                            <div class="specials-image"><img src="~/lib/Assets/images/specials-6.jpg" class="img-fluid w-75" alt=""></div>
+                            <div class="specials-data">
+                                <h4 class="specials-name">Honey chicken</h4>
+                                <span class="specials-food-info">Side</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
     <section id="menu" class="menu">
-  
+
         <div class="row align-items-center container  mx-auto ">
             <div class="image col-lg-6 col-md-6 col-12 w-50 ">
                 <img class="image-fluid float-left pic" src="~/lib/Assets/images/menu.png" />
@@ -107,78 +181,163 @@
             <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 ">
                 <h6>Our Menu</h6>
                 <h2>Check our Tasty Food</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac gravida est. Etiam nisi leo, pellentesque at cursus ut, lacinia id elit. Suspendisse in nulla vel sapien tincidunt efficitur a nec nibh. Vestibulum luctus ultricies mollis. Quisque eget justo id quam sollicitudin volutpat. Suspendisse in eros in felis venenatis maximus eget a nisl.</p>
-                <a href="#">Explore</a>
+                <p>We have a wide selection of dishes. Aside from our famous Shanghai cuisine, we put together a menu that everyone can enjoy. </p>
+                <a class="login-btn" href="#">Explore</a>
             </div>
         </div>
     </section>
-        <section id="chefs" class="chefs">
+    <section id="chefs" class="chefs">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Proffesional <span>Chefs</span></h2>
+                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="~/lib/Assets/images/chef1.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Master Chef</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="~/lib/Assets/images/chef2.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="member-info">
+                            <h4>Sarah Jhonson</h4>
+                            <span>Patissier</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="~/lib/Assets/images/chef3.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+                            <span>Cook</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container mt-5">
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Our Proffesional <span>Chefs</span></h2>
+                    <h2><span>Contact</span> Us</h2>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
                 </div>
-
+            </div>
+            <div class="info-wrap">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member">
-                            <div class="pic"><img src="~/lib/Assets/images/chef1.jpg" class="img-fluid rounded" alt=""></div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Master Chef</span>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-6 info">
+                        <i class="fa fa-map-marker aria-hidden=" true""></i>
+                        <h4>Location:</h4>
+                        <p>A108 Adam Street<br>New York, NY 535022</p>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member">
-                            <div class="pic"><img src="~/lib/Assets/images/chef2.jpg" class="img-fluid rounded" alt=""></div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Patissier</span>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <h4>Open Hours:</h4>
+                        <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member">
-                            <div class="pic"><img src="~/lib/Assets/images/chef3.jpg" class="img-fluid rounded" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Cook</span>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <h4>Email:</h4>
+                        <p>info@example.com<br>contact@example.com</p>
                     </div>
 
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h4>Call:</h4>
+                        <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                    </div>
                 </div>
-
             </div>
-        </section>
-        <section id="contact" class="contact-newsletter">
-            <div class="map">
-                <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7696.094287919249!2d79.85716182154012!3d6.914081899618856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594226a0ffbb%3A0xa413c5b33bf575f6!2sKollupitiya%2C%20Colombo!5e0!3m2!1sen!2slk!4v1625152415458!5m2!1sen!2slk"
-                        frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
 
-    </body>
+            <form action="" method="post" role="form" class="send-massage-form">
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validate"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                </div>
+                <!--
+                <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                -->
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+        </div>
+        <div class="map">
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7696.094287919249!2d79.85716182154012!3d6.914081899618856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594226a0ffbb%3A0xa413c5b33bf575f6!2sKollupitiya%2C%20Colombo!5e0!3m2!1sen!2slk!4v1625152415458!5m2!1sen!2slk"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+</body>
     </html>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        }, navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>

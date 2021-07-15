@@ -14,67 +14,71 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 </head>
 <body>
-    
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
- 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-lg fixed-top navbar-dark bg-transparent">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="~/lib/Assets/images/logo.png" alt="" width="51" height="40" class="d-inline ">
-                    <h4 class="logo-text">Dumpling Food</h4>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-
-                    <!--li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>-->
-
-
-                    <div class="nav-menu d-none d-lg-block">
-                        <ul class="navbar-nav ml-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#About">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Specials">Specials</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Recomended">Recomended</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Menu">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#chefs">Chefs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Contact">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#"><button class=" login-btn">Login</button></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- nav-menu -->
-                </div>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-lg fixed-top navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="~/lib/Assets/images/logo.png" alt="" width="51" height="40" class="d-inline ">
+                <h4 class="logo-text">Dumpling Food</h4>
+            </a>
+            <!--li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>-->
+            <div class="nav-menu d-none d-lg-block">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Specials">Specials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Recomended">Recomended</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#chefs">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><div class=" login-btn">Login</div></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><div class=" reg-btn">Register</div></a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
-    <!-- End Header -->
+                <!-- nav-menu -->
+        </div>
+    </nav>
+    
+    
 
 
     <div class="body-content">
-        <main role="main" class="pb-3">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="footer text-muted">
+    <footer id="footer" class="footer">
         <div class="container">
-            &copy; 2021 - Dumpling_Food - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <h3>Dumpling Food</h3>
+            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-skype"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Dumpling Food</span></strong>. All Rights Reserved<br />
+                <span>Designed by UCSC Group 35</span>
+
+            </div>
+
         </div>
     </footer>
     @RenderSection("Scripts", required: false)
