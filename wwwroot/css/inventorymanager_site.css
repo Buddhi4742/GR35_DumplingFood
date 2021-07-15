@@ -2595,14 +2595,3 @@ a.rm-viewdetails:before {
 
 
 
-
-/*Shaveen*/
-/*Inventory manager styles*/
-
-.inventorytable{
-
-}
-
-.inventorybody {
-    background-image: url("~/lib/Assets/images/InventoryBackground.jpg");
-}
