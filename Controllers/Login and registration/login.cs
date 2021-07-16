@@ -4,11 +4,21 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dumpling_Food.Models;
+using Dumpling_Food.Services;
+
 
 namespace Dumpling_Food.Controllers.Login_and_registration
 {
     public class Login : Controller
     {
+        private readonly Services.DbServices dbServices;
+
+        public Login(Services.DbServices dbServices)
+        {
+            this.dbServices = dbServices;
+        }
+
         //GET: login
         public IActionResult Userlogin()
         {
@@ -16,6 +26,21 @@ namespace Dumpling_Food.Controllers.Login_and_registration
         }
         public IActionResult Userregister()
         {
+            return View();
+        }
+        public ActionResult Logincheck(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = dbServices.Get(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            // return RedirectToAction(nameof());
             return View();
         }
 

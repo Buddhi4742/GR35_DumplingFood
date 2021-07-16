@@ -52,6 +52,8 @@ namespace Dumpling_Food.Controllers
             return View(user);
         }
 
+
+
         // POST: UserController/Create
         //[HttpPost]
         //[ValidateAntiForgeryToken]
