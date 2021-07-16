@@ -42,11 +42,11 @@ namespace Dumpling_Food.Models.User
         //[DisplayFormat(DataFormatString = "{0:#,0}")]
         //public decimal Price { get; set; }
 
-        //[BsonElement("ImageUrl")]
-        //[Display(Name = "Photo")]
-        //[DataType(DataType.ImageUrl)]
-        //[Required]
-        //public string ImageUrl { get; set; }
+        [BsonElement("ImageUrl")]
+        [Display(Name = "Photo")]
+        [DataType(DataType.ImageUrl)]
+        [Required]
+        public string ImageUrl { get; set; }
 
 
     }
