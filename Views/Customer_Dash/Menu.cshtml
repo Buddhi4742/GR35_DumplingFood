@@ -1,0 +1,387 @@
+﻿
+@{
+    ViewData["Title"] = "Menu";
+    Layout = "~/Views/Shared/_LayoutCustomerlogged.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Flip Book sin Librerias</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+</head>
+<body>
+
+    <div class="tab-section">
+        <ul>
+            <li><a id="tab1" href="?upcoming" class="active">Dumplings </a></li>
+            <li><a id="tab2" href="#"> Soups </a></li>
+            <li><a id="tab3" href="#"> Noodles & Rice</a></li>
+            <li><a id="tab4" href="#"> Spicy Brine </a></li>
+            <li><a id="tab5" href="#"> Appetizer</a></li>
+            <li><a id="tab6" href="#"> Street food </a></li>
+            <li><a id="tab7" href="#"> Promotion package</a></li>
+
+
+        </ul>
+
+
+        <hr>
+    </div>
+
+    <!--tab1 Dumplings -->
+
+    <div class="cmcontainer" id="tab1C">
+        <h4> Dumplings </h4>
+        <div class="book-content">
+            <div class="book">
+                <div class="face-front" id="portada"> <img src="~/lib/Images/menu.png" width="250" height="=480" /></div>
+
+                <div class="face-back" id="trsf">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/beef& celery.jpg" width="180" height="120" class="pp" />
+                            <h2>Beef & celeray</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.700.00</h3>
+
+                            <p> Undervalued vegetable and often an afterthought thrown into salads or soup stock, or served as crudits, or enjoyed with a Bloody Mary </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="book">
+                <div class="face-front">
+                    <div class="mccard__content">
+                        <div class="mccard__header" style="background: #EA8A0F">
+                            <img src="~/lib/Images/Cabagge-pork.jpg" width="180" height="120" class="pp" />
+                            <h2>Pork & cabbage</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.700.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="face-back">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/chicken&mushroom.jpg" width="180" height="120" class="pp" />
+                            <h2> Chicken & mushroom</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.650.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt,  voluptate quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="book">
+                <div class="face-front">
+                    <div class="mccard__content">
+                        <div class="mccard__header" style="background: #EA8A0F">
+                            <img src="~/lib/Images/pork&scallion.jpg" width="180" height="120" class="pp" />
+                            <h2>Pork & Scallon</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.700.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt,  quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="face-back">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/zuccini&egg.jpg" width="180" height="120" class="pp" />
+                            <h2>Zuccini & egg</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.600.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+                        </div>
+                    </div>
+                    <!--
+
+                    <div class="book">
+
+                        <div class="face-front">
+                            <h1>Title 6</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, vero quod ducimus placeat voluptate quidem error sequi, earum eos minima in!</p>
+                        </div>
+                        <div class="face-back" id="portada-back">
+                        </div>
+                    </div>
+                     -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--tab2 Soups  -->
+
+
+    <div class="cmcontainer" id="tab2C">
+             <h4>Soups </h4>
+        <div class="book-content">
+            <div class="book">
+                <div class="face-front" id="portada"> <img src="~/lib/Images/menu.png" width="250" height="=480" /></div>
+
+                <div class="face-back" id="trsf">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/Chicken-Cordycep-Soup.jpg" width="180" height="120" class="pp" />
+                            <h2>Chicken & cordyceps flower </h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.350.00</h3>
+
+                            <p> Undervalued vegetable and often an afterthought thrown into salads or soup stock, or served as crudits, or enjoyed with a Bloody Mary </p>
+                            <p>  ⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="book">
+                <div class="face-front">
+                    <div class="mccard__content">
+                        <div class="mccard__header" style="background: #EA8A0F">
+                            <img src="~/lib/Images/porkribs&mushroom soup.jpg" width="180" height="120" class="pp" />
+                            <h2>Pork eibs & mushroom </h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.350.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="face-back">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/chicken&mushroom.jpg" width="180" height="120" class="pp" />
+                            <h2> Chicken & mushroom</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.650.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt,  voluptate quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--tab3 Noodles & rice -->
+
+    <div class="cmcontainer" id="tab3C">
+        <h4> Noodles & rice </h4>
+        <div class="book-content">
+            <div class="book">
+                <div class="face-front" id="portada"> <img src="~/lib/Images/menu.png" width="250" height="=480" /></div>
+
+                <div class="face-back" id="trsf">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/beef-noodle-soup.jpg" width="180" height="120" class="pp" />
+                            <h2>Beef & Noodles soup</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.700.00</h3>
+
+                            <p> Undervalued vegetable and often an afterthought thrown into salads or soup stock, or served as crudits, or enjoyed with a Bloody Mary </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="book">
+                <div class="face-front">
+                    <div class="mccard__content">
+                        <div class="mccard__header" style="background: #EA8A0F">
+                            <img src="~/lib/Images/porkmeatball.jpg" width="180" height="120" class="pp" />
+                            <h2>Pork meat ball & noodles</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.700.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="face-back">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/chicken&mushroom.jpg" width="180" height="120" class="pp" />
+                            <h2> Vegetable & noodle soup </h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.500.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt,  voluptate quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="book">
+                <div class="face-front">
+                    <div class="mccard__content">
+                        <div class="mccard__header" style="background: #EA8A0F">
+                            <img src="~/lib/Images/pork&scallion.jpg" width="180" height="120" class="pp" />
+                            <h2>Pork & Scallon</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.700.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt,  quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="face-back">
+                    <div class="mccard__content">
+                        <div class="mccard__header">
+                            <img src="~/lib/Images/zuccini&egg.jpg" width="180" height="120" class="pp" />
+                            <h2>Zuccini & egg</h2>   <button class="wht"> 💛</button>
+                        </div>
+                        <div class="mccard__body">
+                            <h3> RS.600.00</h3>
+
+                            <p> Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, quidem error sequi, earum eos minima in! </p>
+                            <p>  ⭐⭐⭐⭐⭐ </p>
+                            <button class="wht"> Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book">
+
+                <div class="face-front">
+                    <h1>Title 6</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perferendis nemo blanditiis impedit aut soluta quia illum deserunt, vero quod ducimus placeat voluptate quidem error sequi, earum eos minima in!</p>
+                </div>
+                <div class="face-back" id="portada-back">
+                </div>
+            </div>
+
+        </div>
+    </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="~/js/site.js"></script>
+</body>
+    </html>

@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Cart Page";
+    Layout = "~/Views/Shared/_LayoutCustomerlogged.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="ctcontainer">
+
+        <h3>Shopping Cart</h3>
+
+        <div class="ctcart">
+
+            <div class="ctproducts">
+
+                <div class="ctproduct">
+
+                    <img src="~/lib/Images/porkribs&mushroom soup.jpg">
+
+                    <div class="ctproduct-info">
+
+                        <h3 class="ctproduct-name">Pork & mushroom soup</h3>
+
+                        <h4 class="ctproduct-price">Rs120.000</h4>
+
+
+
+                        <p class="ctproduct-quantity">
+                            Qnt: <input value="1" name="">
+
+                            <button class="ctproduct-remove" id="mybtn">
+
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+
+                                <span class="ctremove">Remove</span>
+
+                            </button>
+
+                    </div>
+                    <div id="myMdl" class="modl">
+
+                        <!-- Modal content -->
+                        <div class="modl-content">
+                            <span class="close">&times;</span>
+                            <p>Do you want to delete this?</p>
+                            <button class="sure-remove" id="mybtn"> Yes </button>
+                            <button class="sure-remove" id="mybtn"> No </button>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="ctproduct">
+
+                    <img src="~/lib/Images/friedegg.jpg">
+
+                    <div class="ctproduct-info">
+
+                        <h3 class="ctproduct-name">Fried Egg</h3>
+
+                        <h4 class="ctproduct-price">Rs 190.00</h4>
+
+
+
+                        <p class="ctproduct-quantity">
+                            Qnt: <input value="1" name="">
+
+                            <button class="ctproduct-remove" id="mybtn">
+
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+
+                                <span class="ctremove">Remove</span>
+
+                            </button>
+
+                    </div>
+
+
+                    <div id="myMdl" class="modl">
+
+                        <!-- Modal content -->
+                        <div class="modl-content">
+                            <span class="close">&times;</span>
+                            <p>Do you want to delete this?</p>
+                            <button class="sure-remove" id="mybtn"> Yes </button>
+                            <button class="sure-remove" id="mybtn"> No </button>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+                <button class="addi" id="addi"> Add item</button>
+
+
+
+
+
+
+            </div>
+
+            <div class="ctcart-total">
+
+                <p>
+
+                    <span>Total Price</span>
+
+                    <span>Rs 310.00</span>
+
+                </p>
+
+                <p>
+
+                    <span>Number of Items</span>
+
+                    <span>2</span>
+
+                </p>
+
+
+                <p>
+
+                    <span>Total Payment</span>
+
+                    <span>Rs 330.00</span>
+
+                </p>
+
+                <a href="#">Proceed to Checkout</a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="brmodal">
+        <div class="brcontent">
+            <div class="close"></div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Add Item to cart </h1>
+
+                    <label for="Item"><b>Item Name</b></label>
+                    <select name="Food" id="Foods">
+                        <option value="Fried Egg">Fried Egg</option>
+                        <option value="Chicken& mushroom">Chicke &Aacute; mushroom</option>
+                        <option value="Zuccine & egg">Zuccine & Egg </option>
+                        <option value="Spicy brine pork ear">Spicy brine pork ear</option>
+                    </select>
+
+                    <label for="quan"><b>Quantity</b></label>
+                    <input type="number" placeholder="1" name="quan" required>
+
+                    <button type="submit" class="atn">Add </button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+    <script src="~/js/site.js"></script>
+
+</body>
+
+
+</html>
+
