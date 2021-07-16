@@ -33,6 +33,11 @@ namespace Dumpling_Food.Controllers
             return View();
         }
 
+        public IActionResult DepletionReport()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
