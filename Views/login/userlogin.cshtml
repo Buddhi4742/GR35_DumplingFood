@@ -5,36 +5,40 @@
     Layout = "~/Views/Shared/_LayoutHome.cshtml";
 }
 
-<h1>Login</h1>
-
-<h4>loginModel</h4>
-<hr/>
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="userlogin">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="userName" class="control-label"></label>
-                <input asp-for="userName" class="form-control" />
-                <span asp-validation-for="userName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="password" class="control-label"></label>
-                <input asp-for="password" class="form-control" />
-                <span asp-validation-for="password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Forgot Password" class="btn btn-primary" />
-                <input type="submit" value="Login" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container">
+    <hr />
+    <div class="row">
+        <div class="col"></div> @*remove this*@
+    <div class="col">
+        <h4>Log into your account</h4>
+        <div class="login-center">
+            <form asp-action="userlogin">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="userName" class="control-label"> Enter Usename Here</label>
+                    <input asp-for="userName" class="form-control" />
+                    <span asp-validation-for="userName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="password" class="control-label">Enter Password Here</label>
+                    <input asp-for="password" class="form-control" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Forgot Password" class="btn btn-primary" />
+                    <input type="submit" value="Login" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="col"></div> @*remove this*@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
