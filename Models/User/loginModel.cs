@@ -28,6 +28,10 @@ namespace Dumpling_Food.Models.User
         [Required]
         public string custName { get; set; }
 
+        [BsonElement("custId")]
+        [Required]
+        public string custId { get; set; }
+
         //[BsonElement("Year")]
         //[Required]
         //[YearRange]

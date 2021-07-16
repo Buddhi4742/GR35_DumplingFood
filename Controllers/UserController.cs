@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Dumpling_Food.Models.User;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,35 @@ namespace Dumpling_Food.Controllers
         public ActionResult Details(int id)
         {
             return View();
+        }
+
+        public ActionResult UserProfile()
+        {
+            return View();
+        }
+       
+        public ActionResult Logincheck(IFormCollection collection)
+        {
+            //if (collection["userName"] == null)
+            //{
+            //    return NotFound();
+            //}
+            var Loginmodel = new LoginModel();
+
+            Loginmodel = dbServices.Getbylogindetails(collection["userName"], collection["password"]);
+            if (Loginmodel == null)
+            {
+                return NotFound();
+            }
+            //Loginmodel.userName = collection["userName"];
+            //Loginmodel.custName = collection["custName"];
+            //Loginmodel.custId = collection["custID"];
+            //var user = dbServices.Get(collection["userName"]);
+            //if (user == null)
+            //{
+            //    return NotFound();
+            //}
+            return View(Loginmodel);
         }
 
         // GET: UserController/Create

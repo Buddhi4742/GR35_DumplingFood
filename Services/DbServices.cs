@@ -31,6 +31,12 @@ namespace Dumpling_Food.Services
             return LoginData.Find(user => user.Id == id).FirstOrDefault();
         }
 
+        public Models.User.LoginModel Getbylogindetails(string username,string password)
+        {
+            return LoginData.Find(user => user.userName == username && user.password == password ).FirstOrDefault();
+        }
+
+
         public Models.User.LoginModel Create(Models.User.LoginModel user)
         {
             LoginData.InsertOne(user);

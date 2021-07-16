@@ -28,21 +28,6 @@ namespace Dumpling_Food.Controllers.Login_and_registration
         {
             return View();
         }
-        public ActionResult Logincheck(string id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var user = dbServices.Get(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            // return RedirectToAction(nameof());
-            return View();
-        }
 
         public ActionResult Index()
         {
